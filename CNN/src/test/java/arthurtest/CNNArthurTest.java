@@ -18,11 +18,11 @@ public class CNNArthurTest extends WebAPI {
 //        registration = PageFactory.initElements(driver, Registration.class);
     }
 
-    @Test @Ignore
-    public void demo () {
-        getInit();
-
-    }
+//    @Test @Ignore
+//    public void demo () {
+//        getInit();
+//
+//    }
 
     @Test
     public void checkNavLinkUsTest () throws InterruptedException {
