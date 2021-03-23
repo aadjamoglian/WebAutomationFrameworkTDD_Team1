@@ -10,8 +10,8 @@
         <module name="Hotels" />
         <module name="ATT" />
         <module name="CNN" />
-        <module name="Cigna" />
         <module name="Delta" />
+        <module name="Cigna" />
         <module name="Generic" />
         <module name="Amazon" />
         <module name="CapitalOne" />

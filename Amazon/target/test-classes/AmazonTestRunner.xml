@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE suite SYSTEM "http://test.ng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="TestSuite" thread-count="2" parallel="false">
+<suite name="AmazonTestSuite" parallel="none" thread-count="1" >
 <!-- thread-count="2" parallel="true"-->
 
     <parameter name="useCloudEnv" value="false"/>
@@ -12,7 +12,7 @@
 
 
 
-    <test name="Amazon Automation Test Script Chrome">
+    <test name="Amazon Automation Test Script using Chrome">
         <parameter name="browserName" value="chrome"/>
         <parameter name="browserVersion" value="89"/>
 
@@ -29,26 +29,26 @@
         </classes>
     </test>
 
-    <test name="Amazon Automation Test Script Firefox" enabled="false">
-        <parameter name="browserName" value="firefox"/>
-        <parameter name="browserVersion" value="86.0"/>
+<!--    <test name="Amazon Automation Test Script Firefox" enabled="false">-->
+<!--        <parameter name="browserName" value="firefox"/>-->
+<!--        <parameter name="browserVersion" value="86.0"/>-->
 
-        <classes>
-            <!--        Calling Test Class -->
-            <class name="homepagetest.HomePageTest">
+<!--        <classes>-->
+<!--            &lt;!&ndash;        Calling Test Class &ndash;&gt;-->
+<!--            <class name="homepagetest.HomePageTest">-->
 
-                <methods>
-                    <!--                Test case include or exclude -->
-                    <!--                <exclude name="testSearchBox"></exclude>-->
-                    <!--                <include name="testLogin"></include>-->
-                </methods>
+<!--                <methods>-->
+<!--                    &lt;!&ndash;                Test case include or exclude &ndash;&gt;-->
+<!--                    &lt;!&ndash;                <exclude name="testSearchBox"></exclude>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                <include name="testLogin"></include>&ndash;&gt;-->
+<!--                </methods>-->
 
-                <!--            Add more test classes-->
+<!--                &lt;!&ndash;            Add more test classes&ndash;&gt;-->
 
-            </class>
+<!--            </class>-->
 
-        </classes>
-    </test>
+<!--        </classes>-->
+<!--    </test>-->
 
 
 </suite>
