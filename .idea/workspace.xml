@@ -13,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -25,6 +25,14 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1q6P50pko343a1ZJoa7PVxZYV4U" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -38,26 +46,26 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Cigna/src/test/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\farha\IdeaProjects\WebAutomationFrameworkTDD_Team1\Cigna\src\test\resources" />
+      <recent name="C:\Users\farha\IdeaProjects\WebAutomationFrameworkTDD_Team1\Cigna\src\main\java" />
       <recent name="C:\Users\Arthur\IdeaProjects\WebAutomationFrameworkTDD_Team1\CNN\src\test\resources" />
       <recent name="C:\Users\Arthur\IdeaProjects\WebAutomationFrameworkTDD_Team1\Generic\BrowserDriver" />
       <recent name="C:\Users\Arthur\IdeaProjects\WebAutomationFrameworkTDD_Team1\Generic\src\main\java\utilities" />
-      <recent name="C:\Users\Arthur\IdeaProjects\WebAutomationFrameworkTDD_Team1\Generic\src\main\java\reporting" />
-      <recent name="C:\Users\Arthur\IdeaProjects\WebAutomationFrameworkTDD_Team1\Generic\src\main\java\databases" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="common" />
       <recent name="homepagetest" />
+      <recent name="common" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/CNN/src/test/resources/CNNTestRunner.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/farha/IdeaProjects/WebAutomationFrameworkTDD_Team1/Cigna/src/test/resources/cignaTestRunner.xml">
     <configuration name="C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/Amazon/src/test/resources/AmazonTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/Amazon/src/test/resources/AmazonTestRunner.xml" />
@@ -71,6 +79,16 @@
     <configuration name="C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/CNN/src/test/resources/CNNTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="CNN" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/CNN/src/test/resources/CNNTestRunner.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/farha/IdeaProjects/WebAutomationFrameworkTDD_Team1/Cigna/src/test/resources/cignaTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Cigna" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/Cigna/src/test/resources/cignaTestRunner.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -96,8 +114,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ATT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/farha/IdeaProjects/WebAutomationFrameworkTDD_Team1/Cigna/src/test/resources/cignaTestRunner.xml" />
+        <item itemvalue="TestNG.Test" />
         <item itemvalue="TestNG.C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/CNN/src/test/resources/CNNTestRunner.xml" />
         <item itemvalue="TestNG.C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/Amazon/src/test/resources/AmazonTestRunner.xml" />
         <item itemvalue="TestNG.HomePageTest.testSearchBox" />
