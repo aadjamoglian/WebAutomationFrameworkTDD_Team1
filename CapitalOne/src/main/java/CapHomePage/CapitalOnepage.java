@@ -25,8 +25,9 @@ public class CapitalOnepage extends WebAPI {
     //singIn
     @FindBy(how= How.XPATH,using = UserName) public WebElement addusername;
     @FindBy(how= How.XPATH,using = Password) public WebElement addPasswpord;
-    @FindBy(how= How.XPATH,using = SingIn) public WebElement SingInbutton;
-    @FindBy(how= How.XPATH,using = YouEnterWrongData) public WebElement YouEnterWrong;
+   // @FindBy(how= How.XPATH,using = SingIn) public WebElement SingInbutton;
+   // @FindBy(how= How.XPATH,using = YouEnterWrongData) public WebElement YouEnterWrong;
+     @FindBy(how= How.XPATH,using =signIntext) public WebElement signIngetText;
 
     //Credit Card
     @FindBy(how = How.XPATH,using =  CreditCardMouseHoover) public  WebElement CreditCardHoover;
@@ -39,7 +40,11 @@ public class CapitalOnepage extends WebAPI {
     //VentureRewards
     @FindBy(how = How.XPATH,using =  VentureRewards) public  WebElement VentureRewardsCard;
     @FindBy(how = How.XPATH,using =  ApplyNowButton) public  WebElement ApplyNowButtonclick;
-    @FindBy(how = How.XPATH,using =  EarnBonusMiles) public  WebElement EarnBonusMilesText;
+    @FindBy(how = How.XPATH,using =  EarnBonus) public  WebElement EarnBonustext;
+
+    //Your Credit Score
+    @FindBy(how = How.XPATH,using =  LearnAndGrow) public  WebElement LearnAndGrowTab;
+    @FindBy(how = How.XPATH,using =  FeatureContain) public  WebElement FeatureContainText;
 
 
 
@@ -62,9 +67,10 @@ public class CapitalOnepage extends WebAPI {
         addusername.sendKeys("Happy");
         Thread.sleep(2000);
         addPasswpord.sendKeys("1243");
-        SingInbutton.click();
+       // SingInbutton.click();
         Thread.sleep(2000);
-        System.out.println(YouEnterWrong.getText());
+        signIngetText.getText();
+        System.out.println(signIngetText.getText());
     }
 
     public void CreditCardMouseHoover() throws InterruptedException {
@@ -93,7 +99,16 @@ public class CapitalOnepage extends WebAPI {
         js.executeScript("arguments[0].scrollIntoView();", ApplyNowButtonclick);
         ApplyNowButtonclick.click();
         Thread.sleep(2000);
-        EarnBonusMilesText.getText();
+        EarnBonustext.getText();
+        System.out.println(EarnBonustext.getText());
 
 }
+    public void YourCreditScoreWorthProtecting() throws InterruptedException {
+        LearnAndGrowTab.click();
+        Thread.sleep(2000);
+        FeatureContainText.getText();
+        System.out.println(FeatureContainText.getText());
+
+
+    }
 }

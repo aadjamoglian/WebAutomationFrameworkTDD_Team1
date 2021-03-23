@@ -39,6 +39,13 @@ public class HomePageTest extends WebAPI {
         String actualText = homePage.TrendingText.getText();
         Assert.assertEquals(actualText, expectedText, "page does not match");
 
+    }
+    @Test(enabled = true)
+    public void testNewRelaeaseFromAllsearch() throws InterruptedException {
+        homePage.NewRelaeaseFromAllsearch();
+        String expectedText = "Video Games";
+        String actualText = homePage.VideoGametext.getText();
+        Assert.assertEquals(actualText, expectedText, "page does not match");
 
     }
 
@@ -93,7 +100,7 @@ public class HomePageTest extends WebAPI {
 
     }
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void testprovideAccountInformation() throws InterruptedException {
 
         homePage.provideAccountInformation();
@@ -103,6 +110,14 @@ public class HomePageTest extends WebAPI {
 
 
 
+    }
+    @Test(enabled = true)
+    public void testToysAndGameFram() throws InterruptedException {
+
+        homePage.ToysAndGameFram();
+        String expectedText = "Shopping Cart";
+        String actualText = homePage.shoppingCartText.getText();
+        Assert.assertEquals(actualText, expectedText, "page does not match");
     }
 
 

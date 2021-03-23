@@ -20,7 +20,7 @@ public class CapitalOneTestPage extends WebAPI {
 
     }
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void testAutoLoanMouseHoover() throws InterruptedException {
         //call the method here
         capitalOnepage.AutoLoanMouseHoover();
@@ -30,16 +30,16 @@ public class CapitalOneTestPage extends WebAPI {
 
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void testCapSingIn() throws InterruptedException {
         //testAutoLoanMouseHoover();
         capitalOnepage.CapSingIn();
-        String expectedText = "";
-        String actualText = capitalOnepage.YouEnterWrong.getText();
+        String expectedText = "Sign In";
+        String actualText = capitalOnepage.signIngetText.getText();
         Assert.assertEquals(actualText, expectedText, "product does not match");
     }
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void testCreditCardMouseHoover() throws InterruptedException {
         capitalOnepage.CreditCardMouseHoover();
         String expectedText = "TYPES OF CREDIT CARDS";
@@ -50,19 +50,27 @@ public class CapitalOneTestPage extends WebAPI {
 
     @Test(enabled = true)
     public void testTravelRewardCardCase() throws InterruptedException {
-        testCreditCardMouseHoover();
+        //testCreditCardMouseHoover();
         capitalOnepage.TravelRewardCardCase();
         String expectedText = "Travel & Miles Rewards";
         String actualText = capitalOnepage.TravelAndMilesRewardText.getText();
         Assert.assertEquals(actualText, expectedText, "product does not match");
     }
 
-    @Test(enabled =true)
+    @Test(enabled =false)
     public void testVentureRewardsCard() throws InterruptedException {
-        testTravelRewardCardCase();
+        //testTravelRewardCardCase();
         capitalOnepage.VentureRewardsCard();
-        String expectedText = "Personal Information";
-        String actualText = capitalOnepage.EarnBonusMilesText.getText();
+        String expectedText = "Earn 60,000 Bonus Miles";
+        String actualText = capitalOnepage.EarnBonustext.getText();
+        Assert.assertEquals(actualText, expectedText, "product does not match");
+    }
+
+    @Test(enabled =false)
+    public void YourCreditScoreWorthProtecting() throws InterruptedException {
+        capitalOnepage.YourCreditScoreWorthProtecting();
+        String expectedText = "Featured Content";
+        String actualText = capitalOnepage.FeatureContainText.getText();
         Assert.assertEquals(actualText, expectedText, "product does not match");
     }
 }

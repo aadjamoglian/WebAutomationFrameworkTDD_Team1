@@ -19,7 +19,7 @@ public class CignaTestDriver extends WebAPI {
 
     }
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void testindividualAndFamilyCase() throws InterruptedException {
         cignaPage.individualAndFamilyCase();
         String expectedText = "Popular Insurance Articles";
@@ -28,7 +28,7 @@ public class CignaTestDriver extends WebAPI {
 
     }
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void testcommonInsurancePlaneTypeCase() throws InterruptedException {
         testindividualAndFamilyCase();
         cignaPage.commonInsurancePlaneTypeCase();

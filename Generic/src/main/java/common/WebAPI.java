@@ -119,7 +119,7 @@ public class WebAPI {
 
     // Browser Setup
     public static WebDriver driver=null;
-    public static String browserStack_userName = "arthuradjamoglia1";
+    public static String browserStack_userName = "Happy";
     public static String browserStack_accessKey = "kqCbxkGyFsYtkCiycjEx";
     public static String sauceLabs_userName = "";
     public static String sauceLabs_accessKey = "";

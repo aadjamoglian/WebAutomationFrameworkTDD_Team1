@@ -24,6 +24,10 @@ public class HomePage extends WebAPI {
     @FindBy (how = How.CSS, using =ClickAllSearch ) public WebElement ClickAllSearchButton;
     @FindBy (how = How.XPATH, using =Trending ) public WebElement TrendingText;
 
+    @FindBy (how = How.XPATH, using =NewReleases ) public WebElement NewReleasesBox;
+    @FindBy (how = How.XPATH, using =VideoGame ) public WebElement VideoGametext;
+
+
     @FindBy (how = How.XPATH, using =Fashion ) public WebElement FashionBox;
     @FindBy (how = How.XPATH, using =FashionNavigation ) public WebElement FashionNavigationBar;
     @FindBy (how = How.XPATH, using =FashionNavigationrolling ) public WebElement FashionNavigationrollingSlide;
@@ -55,7 +59,13 @@ public class HomePage extends WebAPI {
     @FindBy (how = How.XPATH, using =userReEnterPassword ) public WebElement userReEnterPasswordSendKey;
     @FindBy (how = How.XPATH, using =gettextCreatAccount ) public WebElement gettextCreatAccounttext;
 
-
+    //toys and game
+    @FindBy (how = How.XPATH, using =toysAndGames ) public WebElement toysAndGamesBox;
+    @FindBy (how = How.XPATH, using =ageRange ) public WebElement ageRangeForKids;
+    @FindBy (how = How.XPATH, using =nubyIceJelTheeterKey ) public WebElement nubyIceJelTheeterKeytoys;
+    @FindBy (how = How.XPATH, using =addToCart ) public WebElement addToCartToy;
+    @FindBy (how = How.XPATH, using =selectCart ) public WebElement selectCartForPayment;
+    @FindBy (how = How.XPATH, using =shoppingCart ) public WebElement shoppingCartText;
 
 
 
@@ -72,12 +82,24 @@ public class HomePage extends WebAPI {
         clickOnElement(searchButtonLocator);
 
     }
-    //work
+    //work all searchButton Rolling
     public void clickAllSearchButton() throws InterruptedException {
         ClickAllSearchButton.click();
         Thread.sleep(2000);
         TrendingText.getText();
     }
+
+
+
+    public void NewRelaeaseFromAllsearch() throws InterruptedException {
+        clickAllSearchButton();
+        NewReleasesBox.click();
+        Thread.sleep(2000);
+        VideoGametext.getText();
+        System.out.println(VideoGametext.getText());
+
+    }
+
 
     //this program not working
     public void ClickOnFashionTab() throws InterruptedException {
@@ -146,8 +168,23 @@ public class HomePage extends WebAPI {
         System.out.println(  gettextCreatAccounttext.getText());
 
 
-
     }
 
+    //toys and game
+    public void ToysAndGameFram() throws InterruptedException {
+        toysAndGamesBox.click();
+        Thread.sleep(2000);
+        ageRangeForKids.click();
+        Thread.sleep(2000);
+        nubyIceJelTheeterKeytoys.click();
+        Thread.sleep(2000);
+        addToCartToy.click();
+        Thread.sleep(2000);
+        selectCartForPayment.click();
+        Thread.sleep(2000);
+        shoppingCartText.getText();
+        System.out.println(  shoppingCartText.getText());
 
+
+    }
 }

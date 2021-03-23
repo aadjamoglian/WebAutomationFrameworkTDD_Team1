@@ -15,6 +15,8 @@ public class HomePageWebElement  {
     public static final String ClickAllSearch="#nav-hamburger-menu > i";
     public static final String Trending="//*[@id=\"hmenu-content\"]/ul[1]/li[1]/div";
 
+    public static final String NewReleases="//*[@id=\"hmenu-content\"]/ul[1]/li[3]/a";
+    public static final String VideoGame ="//*[@id=\"zg_left_col1\"]/div[1]/h3";
 
     public static final String Fashion="//*[@id=\"nav-xshop\"]/a[7]";
     public static final String FashionNavigation="//*[@id=\"live-flagship-root\"]/div/div[2]/div[2]/div/a[2]";
@@ -49,5 +51,11 @@ public class HomePageWebElement  {
     public static final String userReEnterPassword=  "//input[@id='ap_password_check']";
     public static final String gettextCreatAccount="//*[@id=\"ap_register_form\"]/div/div/h1";
 
-
+//ToysAnd Games
+    public static final String toysAndGames="//a[contains(text(),'Toys & Games')]";
+    public static final String ageRange= "//*[@id=\"s-refinements\"]/div[1]/ul/li[1]/span/a/div/label/i";
+    public static final String nubyIceJelTheeterKey= "//span[contains(text(),'Nuby Ice Gel Teether Keys')]";
+    public static final String addToCart = "//input[@id='add-to-cart-button']";
+    public static final String selectCart= "//*[@id=\"nav-cart\"]";
+    public static final String shoppingCart ="//*[@id=\"sc-active-cart\"]/div/div/div";
 }
