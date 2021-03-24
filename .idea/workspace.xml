@@ -26,6 +26,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
   <component name="ProjectId" id="1q6P50pko343a1ZJoa7PVxZYV4U" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -38,26 +41,27 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ATT/src/main/java/supportpage" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ATT/src/main/java/supportpage" />
+      <recent name="$PROJECT_DIR$/Generic/BrowserDriver/mac" />
+      <recent name="$PROJECT_DIR$/Amazon/src/main/java/homepage" />
+      <recent name="$PROJECT_DIR$/Amazon/src/test/java/homepagetest" />
       <recent name="C:\Users\Arthur\IdeaProjects\WebAutomationFrameworkTDD_Team1\CNN\src\test\resources" />
-      <recent name="C:\Users\Arthur\IdeaProjects\WebAutomationFrameworkTDD_Team1\Generic\BrowserDriver" />
-      <recent name="C:\Users\Arthur\IdeaProjects\WebAutomationFrameworkTDD_Team1\Generic\src\main\java\utilities" />
-      <recent name="C:\Users\Arthur\IdeaProjects\WebAutomationFrameworkTDD_Team1\Generic\src\main\java\reporting" />
-      <recent name="C:\Users\Arthur\IdeaProjects\WebAutomationFrameworkTDD_Team1\Generic\src\main\java\databases" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="supportpagetest" />
       <recent name="common" />
       <recent name="homepagetest" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/CNN/src/test/resources/CNNTestRunner.xml">
+  <component name="RunManager" selected="TestNG.SupportPageTest.viewMyBillDisplayedTest">
     <configuration name="C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/Amazon/src/test/resources/AmazonTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/Amazon/src/test/resources/AmazonTestRunner.xml" />
@@ -68,9 +72,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/CNN/src/test/resources/CNNTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="CNN" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/CNN/src/test/resources/CNNTestRunner.xml" />
+    <configuration name="SupportPageTest.supportTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ATT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="supportpagetest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="supportpagetest" />
+      <option name="MAIN_CLASS_NAME" value="supportpagetest.SupportPageTest" />
+      <option name="METHOD_NAME" value="supportTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SupportPageTest.viewMyBillDisplayedTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ATT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="supportpagetest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="supportpagetest" />
+      <option name="MAIN_CLASS_NAME" value="supportpagetest.SupportPageTest" />
+      <option name="METHOD_NAME" value="viewMyBillDisplayedTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/ATT/src/test/resources/ATTTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ATT" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/ATT/src/test/resources/ATTTestRunner.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -78,18 +118,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTest.testSearchBox" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="homepagetest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="homepagetest" />
-      <option name="MAIN_CLASS_NAME" value="homepagetest.HomePageTest" />
-      <option name="METHOD_NAME" value="testSearchBox" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
       <method v="2">
@@ -98,9 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/CNN/src/test/resources/CNNTestRunner.xml" />
+        <item itemvalue="TestNG.SupportPageTest.viewMyBillDisplayedTest" />
+        <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/ATT/src/test/resources/ATTTestRunner.xml" />
+        <item itemvalue="TestNG.SupportPageTest.supportTest" />
         <item itemvalue="TestNG.C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/Amazon/src/test/resources/AmazonTestRunner.xml" />
-        <item itemvalue="TestNG.HomePageTest.testSearchBox" />
+        <item itemvalue="TestNG.&lt;default&gt;" />
       </list>
     </recent_temporary>
   </component>
