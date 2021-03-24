@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7164e315-e4a8-47c7-bcc3-62f03911cb44" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN/Extent-Report/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/CNN/Extent-Report/ExtentReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN/src/main/java/arthur/CNNArthur.java" beforeDir="false" afterPath="$PROJECT_DIR$/CNN/src/main/java/arthur/CNNArthur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN/src/test/java/arthurtest/CNNArthurTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CNN/src/test/java/arthurtest/CNNArthurTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN/target/classes/arthur/CNNArthur.class" beforeDir="false" afterPath="$PROJECT_DIR$/CNN/target/classes/arthur/CNNArthur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN/target/test-classes/arthurtest/CNNArthurTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/CNN/target/test-classes/arthurtest/CNNArthurTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generic/src/main/java/common/WebAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/src/main/java/common/WebAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapitalOne/src/main/java/arthur/CapitalOneArthur.java" beforeDir="false" afterPath="$PROJECT_DIR$/CapitalOne/src/main/java/arthur/CapitalOneArthur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapitalOne/src/test/java/arthurtest/CapitalOneArthurTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CapitalOne/src/test/java/arthurtest/CapitalOneArthurTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapitalOne/src/test/resources/CapitalOneTestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CapitalOne/src/test/resources/CapitalOneTestRunner.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,7 +44,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CapitalOne/src/test" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -54,18 +52,22 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Arthur\IdeaProjects\WebAutomationFrameworkTDD_Team1\CapitalOne\src\test" />
       <recent name="C:\Users\Arthur\IdeaProjects\WebAutomationFrameworkTDD_Team1\CNN\src\test\resources" />
       <recent name="C:\Users\Arthur\IdeaProjects\WebAutomationFrameworkTDD_Team1\Generic\BrowserDriver" />
       <recent name="C:\Users\Arthur\IdeaProjects\WebAutomationFrameworkTDD_Team1\Generic\src\main\java\utilities" />
       <recent name="C:\Users\Arthur\IdeaProjects\WebAutomationFrameworkTDD_Team1\Generic\src\main\java\reporting" />
-      <recent name="C:\Users\Arthur\IdeaProjects\WebAutomationFrameworkTDD_Team1\Generic\src\main\java\databases" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Arthur\IdeaProjects\WebAutomationFrameworkTDD_Team1\CapitalOne\src\main" />
+      <recent name="C:\Users\Arthur\IdeaProjects\WebAutomationFrameworkTDD_Team1\CapitalOne\src\test" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="common" />
       <recent name="homepagetest" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/CNN/src/test/resources/CNNTestRunner.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/CapitalOne/src/test/resources/CapitalOneTestRunner.xml">
     <configuration name="CNNArthurTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="CNN" />
       <extension name="coverage">
@@ -121,18 +123,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTest.testSearchBox" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Amazon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="homepagetest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="homepagetest" />
-      <option name="MAIN_CLASS_NAME" value="homepagetest.HomePageTest" />
-      <option name="METHOD_NAME" value="testSearchBox" />
-      <option name="TEST_OBJECT" value="METHOD" />
+    <configuration name="C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/CapitalOne/src/test/resources/CapitalOneTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CapitalOne" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/CapitalOne/src/test/resources/CapitalOneTestRunner.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -141,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/CapitalOne/src/test/resources/CapitalOneTestRunner.xml" />
         <item itemvalue="TestNG.C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/CNN/src/test/resources/CNNTestRunner.xml" />
         <item itemvalue="TestNG.CNNArthurTest" />
         <item itemvalue="TestNG.CNNArthurTest.searchInUSPage2Test" />
         <item itemvalue="TestNG.C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/Amazon/src/test/resources/AmazonTestRunner.xml" />
-        <item itemvalue="TestNG.HomePageTest.testSearchBox" />
       </list>
     </recent_temporary>
   </component>
