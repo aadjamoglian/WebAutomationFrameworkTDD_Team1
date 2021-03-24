@@ -548,6 +548,31 @@ public class WebAPI {
         } catch (Exception ex3) {
             System.out.println("CSS locator didn't work");
         }
+
+    }
+
+    public void typeOnInputBox2(String locator, String value) {
+        try {
+            driver.findElement(By.id(locator)).sendKeys(value, Keys.ENTER);
+        } catch (Exception ex1) {
+            System.out.println("ID locator didn't work");
+        }
+        try {
+            driver.findElement(By.name(locator)).sendKeys(value, Keys.ENTER);
+        } catch (Exception ex2) {
+            System.out.println("Name locator didn't work");
+        }
+        try {
+            driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
+        } catch (Exception ex3) {
+            System.out.println("CSS locator didn't work");
+        }
+        try {
+            driver.findElement(By.className(locator)).sendKeys(value, Keys.ENTER);
+        } catch (Exception ex3) {
+            System.out.println("ClassName locator didn't work");
+        }
+
     }
 
 
@@ -633,6 +658,10 @@ public class WebAPI {
 
     public void clickByName(String loc) {
         driver.findElement(By.name(loc)).click();
+    }
+
+    public void clickByClassName(String loc) {
+        driver.findElement(By.className(loc)).click();
     }
 
     public void clickByLinkText(String loc) {
