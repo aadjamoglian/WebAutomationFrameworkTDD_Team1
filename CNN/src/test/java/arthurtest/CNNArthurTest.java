@@ -206,11 +206,34 @@ public class CNNArthurTest extends WebAPI {
 
 
 
-    @Test
-    public void searchInUSPage2Test () throws InterruptedException {
+    @Test @Ignore
+    public void searchInUSPage2FirstTest () throws InterruptedException {
         getInit();
-        cnnarthur.searchInUsPage2();
+        cnnarthur.searchInUSPage2First();
+        String expected = "Republicans' new strategy? Pointless obstruction. - CNNPolitics";
+        String actual = driver.getTitle();
+        Assert.assertEquals(actual, expected, "Page does not match.");
     }
+
+    @Test
+    public void searchInUSPage2SecondTest () throws InterruptedException {
+        getInit();
+        cnnarthur.searchInUSPage2First();
+        String expected = "Travel nurses deal with stress, loneliness and mistrust while serving as a Covid-19 rapid deployment system - CNN";
+        String actual = driver.getTitle();
+        Assert.assertEquals(actual, expected, "Page does not match.");
+    }
+
+    @Test
+    public void searchInUSPage2ThirdTest () throws InterruptedException {
+        getInit();
+        cnnarthur.searchInUSPage2First();
+        String expected = "Neanderthals could hear and make the same sounds as humans, new research suggests - CNN";
+        String actual = driver.getTitle();
+        Assert.assertEquals(actual, expected, "Page does not match.");
+    }
+
+    // 25 Test cases done
 
 
 

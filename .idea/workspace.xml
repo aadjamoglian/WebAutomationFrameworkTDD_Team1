@@ -66,6 +66,23 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/CNN/src/test/resources/CNNTestRunner.xml">
+    <configuration name="CNNArthurTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CNN" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="arthurtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="arthurtest" />
+      <option name="MAIN_CLASS_NAME" value="arthurtest.CNNArthurTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CNNArthurTest.searchInUSPage2Test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="CNN" />
       <extension name="coverage">
@@ -125,6 +142,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/CNN/src/test/resources/CNNTestRunner.xml" />
+        <item itemvalue="TestNG.CNNArthurTest" />
         <item itemvalue="TestNG.CNNArthurTest.searchInUSPage2Test" />
         <item itemvalue="TestNG.C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/Amazon/src/test/resources/AmazonTestRunner.xml" />
         <item itemvalue="TestNG.HomePageTest.testSearchBox" />

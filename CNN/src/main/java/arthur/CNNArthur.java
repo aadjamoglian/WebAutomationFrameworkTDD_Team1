@@ -2,6 +2,8 @@ package arthur;
 
 import common.WebAPI;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.interactions.Actions;
 
 public class CNNArthur extends WebAPI {
 
@@ -144,12 +146,33 @@ public class CNNArthur extends WebAPI {
         clickByLinkText("The emotional catharsis of 'Wandavision' in a year of grief");
     }
 
-    public void searchInUsPage2 () throws InterruptedException {
+    public void searchInUSPage2 () throws InterruptedException {
         checkNavLinkUs();
         clickByCss("div[class='Flex-sc-1sqrs56-0 sc-kvZOFW cJcAaN'] button[class='sc-jhAzac sc-gisBJw hioqcg']");
-        typeOnInputBox2("header-search-bar", "hello");
+        typeOnInputBox3("header-search-bar", "hello");
         sleepFor(1);
-        clickByClassName("pagination-arrow pagination-arrow-right cnnSearchPageLink text-active");
+        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
+        sleepFor(2);
+        Actions act =  new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//div[@class='pagination-arrow pagination-arrow-right cnnSearchPageLink text-active']"))).click().perform();
+        sleepFor(2);
     }
+
+    public void searchInUSPage2First () throws InterruptedException {
+        searchInUSPage2();
+        clickByLinkText("Republicans' new strategy? Pointless obstruction.");
+    }
+
+    public void searchInUSPage2Second () throws InterruptedException {
+        searchInUSPage2();
+        clickByLinkText("Travel nurses deal with stress, loneliness and mistrust while serving as a Covid-19 rapid deployment system");
+    }
+
+    public void searchInUSPage2Third () throws InterruptedException {
+        searchInUSPage2();
+        clickByLinkText("Neanderthals could hear and make the same sounds as humans, new research suggests");
+    }
+
+
 
 }

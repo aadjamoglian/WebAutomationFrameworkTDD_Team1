@@ -575,6 +575,18 @@ public class WebAPI {
 
     }
 
+    public void typeOnInputBox3(String locator, String value) {
+        try {
+            driver.findElement(By.id(locator)).sendKeys(value, Keys.ENTER);
+        } catch (Exception ex1) {
+            System.out.println("ID locator didn't work");
+        }
+    }
+
+
+
+
+
 
     // Customer Made Helper Methods for Amex.com
     public void brokenLink() throws IOException {
