@@ -35,18 +35,24 @@ public class SupportPageTest extends WebAPI {
         boolean display = supportPage.viewMyBill.isDisplayed();
         Assert.assertEquals(display, true);
     }
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void viewMyBillTest(){
         supportPage.viewMyBill();
         String viewMyBillTitle=driver.getTitle();
         Assert.assertEquals(viewMyBillTitle,"Login Screen");
     }
-    @Test(enabled = false)
+
+
+    @Test(enabled =false)
     public void viewMyBillSignInTest(){
         supportPage.viewMyBillSignIn();
         String text = supportPage.errorCodeArea.getText();
         Assert.assertEquals(text,"CARE CODE: 201 [LU100]");
     }
+
+
+
+
     @Test(enabled = false)
     public void don_tHaveIdTextDisplayTest() {
         supportPage.don_tHaveIdTextDisplay();
@@ -64,18 +70,27 @@ public class SupportPageTest extends WebAPI {
         supportPage.userLabelDisplay();
         boolean userLabelDisplayed = supportPage.userLabel.isDisplayed();
         Assert.assertEquals(userLabelDisplayed, true);
+        System.out.println("user Label Displayed is "+userLabelDisplayed );
     }
     @Test(enabled = false)
     public void saveUserIdDisplayTest() {
         supportPage.saveUserIdDisplay();
         boolean display = supportPage.saveUserId.isDisplayed();
         Assert.assertEquals(display, true);
-    }@Test(enabled = false)
+    }
+
+
+    @Test(enabled = false)
     public void makeAPaymentTest(){
         supportPage.makeAPayment();
         String makeAPaymentUrl = driver.getCurrentUrl();
-        Assert.assertEquals(makeAPaymentUrl,"https://signin.att.com/dynamic/iamLRR/LrrController?IAM_OP=login&appName=m10707&loginSuccessURL=https%3A%2F%2Foidc.idp.clogin.att.com%2Fmga%2Fsps%2Foauth%2Foauth20%2Fauthorize%3Fnonce%3D7eblKmU13G%26redirect_uri%3Dhttps%253A%252F%252Fwww.att.com%252Fisam%252Fsps%252Foidc%252Frp%252Fconsumerfed%252Fredirect%252FolamOP%26response_mode%3Dform_post%26alt_dest%3Dhttps%25253A%25252F%25252Fwww.att.com%25252Folam%25252FpassthroughAction.myworld%25253FactionType%25253DMakePayment%26scope%3Dopenid%2BauthenticationTypes%26response_type%3Did_token%26state%3DF4JI2AypFh%26client_id%3Dm10707");
+        Assert.assertEquals(makeAPaymentUrl,"https://signin.att.com/dynamic/iamLRR/LrrController?IAM_OP=login&appName=m10707&loginSuccessURL=https%3A%2F%2Foidc.idp.clogin.att.com%2Fmga%2Fsps%2Foauth%2Foauth20%2Fauthorize%3Fnonce%3DMsWgrdunFm%26redirect_uri%3Dhttps%253A%252F%252Fwww.att.com%252Fisam%252Fsps%252Foidc%252Frp%252Fconsumerfed%252Fredirect%252FolamOP%26response_mode%3Dform_post%26alt_dest%3Dhttps%25253A%25252F%25252Fwww.att.com%25252Folam%25252FpassthroughAction.myworld%25253FactionType%25253DMakePayment%26scope%3Dopenid%2BauthenticationTypes%26response_type%3Did_token%26state%3DRKmxBJ8DKt%26client_id%3Dm10707");
     }
+
+
+
+
+
     @Test(enabled = false)
     public void restMyPasswordTest(){
         supportPage.restMyPassword();
@@ -132,7 +147,7 @@ public class SupportPageTest extends WebAPI {
     @Test(enabled = false)
     public void hboMaxTest(){
         supportPage.hboMax();
-        String expectedTitle="HBO Max Sign-in FAQ - Bill &amp; account Support";
+        String expectedTitle="HBO Max Sign-in FAQ - Bill & account Support";
         String actualTitle=driver.getTitle();
         Assert.assertEquals(expectedTitle,actualTitle,"test fail");
     }
@@ -144,7 +159,7 @@ public class SupportPageTest extends WebAPI {
     }
     @Test(enabled = false)
     public void at_tInternetTest(){
-        supportPage.hboMax();
+        supportPage.at_tInternet();
         String expectedText="AT&T Internet support";
         String actualText=supportPage.at_tInternetSupport.getText();
         Assert.assertEquals(expectedText,actualText,"test fail");

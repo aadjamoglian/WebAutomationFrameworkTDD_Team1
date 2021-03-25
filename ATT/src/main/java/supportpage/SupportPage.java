@@ -22,7 +22,7 @@ public class SupportPage extends WebAPI {
     public WebElement signInButton;
     @FindBy(xpath = errorCodeAreaLocator)
     public WebElement errorCodeArea;
-    @FindBy(xpath = userLabelLocator)
+  @FindBy(xpath = userLabelLocator)
     public WebElement userLabel;
     @FindBy(xpath = passwordLabelLocator)
     public WebElement passwordLabel;

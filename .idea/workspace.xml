@@ -13,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -25,6 +25,14 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
@@ -61,7 +69,7 @@
       <recent name="homepagetest" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SupportPageTest.viewMyBillDisplayedTest">
+  <component name="RunManager" selected="TestNG.CommercialPageTest.commercialDisplayedTest">
     <configuration name="C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/Amazon/src/test/resources/AmazonTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/Amazon/src/test/resources/AmazonTestRunner.xml" />
@@ -72,17 +80,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SupportPageTest.supportTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ATT" />
+    <configuration name="CommercialPageTest.commercialDisplayedTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CapitalOne" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="supportpagetest.*" />
+          <option name="PATTERN" value="commercialpagetest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="supportpagetest" />
-      <option name="MAIN_CLASS_NAME" value="supportpagetest.SupportPageTest" />
-      <option name="METHOD_NAME" value="supportTest" />
+      <option name="PACKAGE_NAME" value="commercialpagetest" />
+      <option name="MAIN_CLASS_NAME" value="commercialpagetest.CommercialPageTest" />
+      <option name="METHOD_NAME" value="commercialDisplayedTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -90,17 +98,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SupportPageTest.viewMyBillDisplayedTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ATT" />
+    <configuration name="CommercialPageTest.commercialTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CapitalOne" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="supportpagetest.*" />
+          <option name="PATTERN" value="commercialpagetest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="supportpagetest" />
-      <option name="MAIN_CLASS_NAME" value="supportpagetest.SupportPageTest" />
-      <option name="METHOD_NAME" value="viewMyBillDisplayedTest" />
+      <option name="PACKAGE_NAME" value="commercialpagetest" />
+      <option name="MAIN_CLASS_NAME" value="commercialpagetest.CommercialPageTest" />
+      <option name="METHOD_NAME" value="commercialTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -118,10 +126,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Amazon" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
+    <configuration name="/Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/CapitalOne/src/test/resources/CapitalOneTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CapitalOne" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/CapitalOne/src/test/resources/CapitalOneTestRunner.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -130,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SupportPageTest.viewMyBillDisplayedTest" />
+        <item itemvalue="TestNG.CommercialPageTest.commercialDisplayedTest" />
+        <item itemvalue="TestNG.CommercialPageTest.commercialTest" />
+        <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/CapitalOne/src/test/resources/CapitalOneTestRunner.xml" />
         <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/ATT/src/test/resources/ATTTestRunner.xml" />
-        <item itemvalue="TestNG.SupportPageTest.supportTest" />
         <item itemvalue="TestNG.C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/Amazon/src/test/resources/AmazonTestRunner.xml" />
-        <item itemvalue="TestNG.&lt;default&gt;" />
       </list>
     </recent_temporary>
   </component>
