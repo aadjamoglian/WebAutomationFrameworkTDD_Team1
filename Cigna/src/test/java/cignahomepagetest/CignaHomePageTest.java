@@ -3,6 +3,7 @@ package cignahomepagetest;
 import cignaHomepage.CignaHomepage;
 import common.WebAPI;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -24,6 +25,7 @@ public class CignaHomePageTest {
             homepage.checkCoronaVirusResourceLink();
             String expectedText = "Coronavirus (COVID-19) Resource Center | Cigna";
             String actualText = driver.getTitle();
+            Assert.assertEquals(actualText,expectedText,"Link is not working");
         }
 
 
@@ -32,6 +34,7 @@ public class CignaHomePageTest {
             homepage.checkMedicareLink();
             String expectedText = "Cigna Medicare Insurance | Cigna";
             String actualText = driver.getTitle();
+            Assert.assertEquals(actualText,expectedText,"Link is not working");
         }
 
 
@@ -40,6 +43,7 @@ public class CignaHomePageTest {
             homepage.checkMedicareAdvantageLink();
             String expectedText = "Medicare Advantage Plans (Part C) | Cigna Medicare";
             String actualText = driver.getTitle();
+            Assert.assertEquals(actualText,expectedText,"Link is not working");
         }
 
 
@@ -48,6 +52,7 @@ public class CignaHomePageTest {
             homepage.checkPrescriptionDrugPlan();
             String expectedText = "Medicare Part D Plans | Cigna";
             String actualText = driver.getTitle();
+            Assert.assertEquals(actualText,expectedText,"Link is not working");
         }
 
 
@@ -56,6 +61,7 @@ public class CignaHomePageTest {
             homepage.checkMedicareSupplementInsurance();
             String expectedText = "Cigna Medicare Supplement Insurance Plans";
             String actualText = driver.getTitle();
+            Assert.assertEquals(actualText,expectedText,"Link is not working");
         }
 
 
@@ -64,6 +70,8 @@ public class CignaHomePageTest {
             homepage.checkEnrollmentAndEligibility();
             String expectedText = "Cigna Official Site | Global Health Service Company";
             String actualText = driver.getTitle();
+            Assert.assertEquals(actualText,expectedText,"Link is not working");
+
         }
 
 
@@ -72,6 +80,7 @@ public class CignaHomePageTest {
             homepage.checkMedicareAdvantageEnrollementAndEligibility();
             String expectedText = "Medicare Advantage (Part C) Enrollment and Eligibility | Cigna";
             String actualText = driver.getTitle();
+            Assert.assertEquals(actualText,expectedText,"Link is not working");
         }
 
 
@@ -80,6 +89,7 @@ public class CignaHomePageTest {
             homepage.checkMedicareAdvantageEnrollementAndEligibility();
             String expectedText = "Cigna - Plan List";
             String actualText = driver.getTitle();
+            Assert.assertEquals(actualText,expectedText,"Link is not working");
         }
 
 
@@ -88,6 +98,7 @@ public class CignaHomePageTest {
             homepage.checkPartDEnrollmentAndEligibility();
             String expectedText = "Medicare Enrollment and Eligibility | Cigna";
             String actualText = driver.getTitle();
+            Assert.assertEquals(actualText,expectedText,"Link is not working");
         }
 
 
@@ -96,6 +107,7 @@ public class CignaHomePageTest {
             homepage.checkMedicareSupplementEnrollmentAndEligibility();
             String expectedText = "Medicare Supplement Enrollment and Eligibility | Cigna";
             String actualText = driver.getTitle();
+            Assert.assertEquals(actualText,expectedText,"Link is not working");
         }
 
 
@@ -104,6 +116,7 @@ public class CignaHomePageTest {
             homepage.checkEnrollmentAndEligibilityOverviewLink();
             String expectedText = "Medicare Enrollment and Eligibility | Cigna";
             String actualText = driver.getTitle();
+            Assert.assertEquals(actualText,expectedText,"Link is not working");
         }
 
 
@@ -112,6 +125,7 @@ public class CignaHomePageTest {
             homepage.checkUnderstandingMedicareLink();
             String expectedText = "Cigna Medicare Insurance | Cigna";
             String actualText = driver.getTitle();
+            Assert.assertEquals(actualText,expectedText,"Link is not working");
         }
 
 
@@ -120,6 +134,7 @@ public class CignaHomePageTest {
             homepage.checkUnderstandingMedicareOverview();
             String expectedText = "Understanding Medicare | Cigna Medicare";
             String actualText = driver.getTitle();
+            Assert.assertEquals(actualText,expectedText,"Link is not working");
         }
 
 
@@ -128,6 +143,7 @@ public class CignaHomePageTest {
             homepage.checkContactUsLink();
             String expectedText = "Contact Us | Customer Service | Cigna";
             String actualText = driver.getTitle();
+            Assert.assertEquals(actualText,expectedText,"Link is not working");
         }
 
 
@@ -136,6 +152,7 @@ public class CignaHomePageTest {
             homepage.checkMemberResourcesAndServices();
             String expectedText = "Customer Forms | Cigna";
             String actualText = driver.getTitle();
+            Assert.assertEquals(actualText,expectedText,"Link is not working");
         }
 
 
@@ -144,6 +161,7 @@ public class CignaHomePageTest {
             homepage.checkCustomerForms();
             String expectedText = "Customer Forms | Cigna";
             String actualText = driver.getTitle();
+            Assert.assertEquals(actualText,expectedText,"Link is not working");
         }
 
         @Test
@@ -151,24 +169,28 @@ public class CignaHomePageTest {
             homepage.checkHealthRiskAssessment();
             String expectedText = "Health Risk Assessment | Cigna Medicare";
             String actualText = driver.getTitle();
+            Assert.assertEquals(actualText,expectedText,"Link is not working");
         }
         @Test
         public void testPremiumPaymentOptions(){
             homepage.checkPremiumPaymentOptions();
             String expectedText = "Medicare Premium Payment Options | Cigna";
             String actualText = driver.getTitle();
+            Assert.assertEquals(actualText,expectedText,"Link is not working");
         }
         @Test
         public void testHealthyAging(){
             homepage.checkhealthyAging();
             String expectedText = "Medicare Disenrollment | Cigna";
             String actualText = driver.getTitle();
+            Assert.assertEquals(actualText,expectedText,"Link is not working");
         }
         @Test
         public void testDepressionAndMentalHealthLink(){
             homepage.checkDepresiionAndMentalHealthLink();
             String expectedText = "Depression and Mental Health | Cigna Healthy Aging";
             String actualText = driver.getTitle();
+            Assert.assertEquals(actualText,expectedText,"Link is not working");
         }
 
     }
