@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7164e315-e4a8-47c7-bcc3-62f03911cb44" name="Default Changelist" comment="" />
+    <list default="true" id="7164e315-e4a8-47c7-bcc3-62f03911cb44" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cigna/Extent-Report/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cigna/Extent-Report/ExtentReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cigna/src/main/java/cignaHomePage/CignaHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cigna/src/main/java/cignaHomePage/CignaHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cigna/src/main/java/cignaHomePage/CignaHomePageWebElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cigna/src/main/java/cignaHomePage/CignaHomePageWebElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cigna/src/test/java/cignaHomePageTest/CignaHomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cigna/src/test/java/cignaHomePageTest/CignaHomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cigna/target/classes/cignaHomePage/CignaHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/Cigna/target/classes/cignaHomePage/CignaHomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cigna/target/classes/cignaHomePage/CignaHomePageWebElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/Cigna/target/classes/cignaHomePage/CignaHomePageWebElement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cigna/target/test-classes/cignaHomePageTest/CignaHomePageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Cigna/target/test-classes/cignaHomePageTest/CignaHomePageTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

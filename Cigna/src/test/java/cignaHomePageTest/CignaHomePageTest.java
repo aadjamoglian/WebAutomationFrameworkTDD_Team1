@@ -22,7 +22,7 @@ public class CignaHomePageTest extends WebAPI {
         // registration= PageFactory.initElements(driver,Registration.class);
     }
 
-
+    @Ignore
     @Test
     public void testIndividualsAndFamilies() {
         homePage.checkIndividualsAndFamilies();
@@ -31,7 +31,7 @@ public class CignaHomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
 
-
+    @Ignore
     @Test
     public void testPlansAndServices() {
         homePage.checkPlanAndServices();
@@ -40,7 +40,7 @@ public class CignaHomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
 
-
+    @Ignore
     @Test
     public void testMedicare() {
         homePage.checkMedicare();
@@ -49,7 +49,7 @@ public class CignaHomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
 
-
+    @Ignore
     @Test
     public void testDentalInsurance() {
         homePage.checkDentalInsurance();
@@ -58,7 +58,7 @@ public class CignaHomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
 
-
+    @Ignore
     @Test
     public void testMedicareSupplement() {
         homePage.checkMedicareSupplement();
@@ -67,7 +67,7 @@ public class CignaHomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
 
-
+    @Ignore
     @Test
     public void testOtherSupplementalInsurance() {
         homePage.checkOtherSupplementalInsurance();
@@ -76,7 +76,7 @@ public class CignaHomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
 
-
+    @Ignore
     @Test
     public void testUnderstandingInsurance() {
         homePage.checkUnderstandingInsurance();
@@ -85,7 +85,7 @@ public class CignaHomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
 
-
+    @Ignore
     @Test
     public void testFullCoverageDentalInsurance() {
         homePage.checkFullCoverageDentalInsurance();
@@ -94,7 +94,7 @@ public class CignaHomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
 
-
+    @Ignore
     @Test
     public void testCommonInsurancePlanType() {
         homePage.checkCommonInsurancePlanType();
@@ -104,7 +104,7 @@ public class CignaHomePageTest extends WebAPI {
 
     }
 
-
+    @Ignore
     @Test
     public void testCopaysDeductible() {
         homePage.checkCopaysDeductible();
@@ -114,7 +114,7 @@ public class CignaHomePageTest extends WebAPI {
 
     }
 
-
+    @Ignore
     @Test
     public void testPreExisting() {
         homePage.checkPreExisting();
@@ -124,7 +124,7 @@ public class CignaHomePageTest extends WebAPI {
 
     }
 
-
+    @Ignore
     @Test
     public void testOpenEnrollment() {
         homePage.checkOpenEnrollment();
@@ -135,7 +135,7 @@ public class CignaHomePageTest extends WebAPI {
 
     }
 
-
+    @Ignore
     @Test
     public void testMemberResources() {
         homePage.checkMemberResources();
@@ -145,7 +145,7 @@ public class CignaHomePageTest extends WebAPI {
 
     }
 
-
+    @Ignore
     @Test
     public void testMemberResourcesOverview() {
         homePage.checkMemberResourcesOverview();
@@ -155,7 +155,7 @@ public class CignaHomePageTest extends WebAPI {
 
     }
 
-
+    @Ignore
     @Test
     public void testSavingsAndSpendingAccount() {
         homePage.checkSavingsAndSpendingAccount();
@@ -164,7 +164,7 @@ public class CignaHomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
 
-
+    @Ignore
     @Test
     public void testPrescriptionDrug() {
         homePage.checkPrescriptionDrug();
@@ -173,7 +173,7 @@ public class CignaHomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
 
-
+    @Ignore
     @Test
     public void testVirtualCare() {
         homePage.checkVirtualCare();
@@ -183,7 +183,7 @@ public class CignaHomePageTest extends WebAPI {
 
     }
 
-
+    @Ignore
     @Test
     public void testHomeDelivery() {
         homePage.checkHomeDelivery();
@@ -192,7 +192,7 @@ public class CignaHomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
 
-
+    @Ignore
     @Test
     public void testHealthAndWellness() {
         homePage.checkHealthAndWellness();
@@ -201,7 +201,7 @@ public class CignaHomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
 
-
+    @Ignore
     @Test
     public void testAdvancingDialogue() {
         homePage.checkAdvancingDialogue();
@@ -211,7 +211,7 @@ public class CignaHomePageTest extends WebAPI {
 
     }
 
-
+    @Ignore
     @Test
     public void testDentalHealth() {
         homePage.checkDentalHealth();
@@ -221,7 +221,7 @@ public class CignaHomePageTest extends WebAPI {
 
     }
 
-
+    @Ignore
     @Test
     public void testDisasterResourceCenter() {
         homePage.checkDisasterResourceCenter();
@@ -231,7 +231,7 @@ public class CignaHomePageTest extends WebAPI {
 
     }
 
-
+    @Ignore
     @Test
     public void testMentalHealth() {
         homePage.checkMentalHealth();
@@ -248,7 +248,7 @@ public class CignaHomePageTest extends WebAPI {
 //        Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
 //    }
 
-
+    @Ignore
     @Test
     public void testShopMedicare() {
         homePage.checkShopMedicare();
@@ -257,7 +257,7 @@ public class CignaHomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
 
-
+    @Ignore
     @Test
     public void testShopPartDPrescription() {
         homePage.checkShopPartDPrescription();
@@ -267,7 +267,7 @@ public class CignaHomePageTest extends WebAPI {
 
     }
 
-
+    @Ignore
     @Test
     public void testShopMedicareSupplement() {
         homePage.checkShopMedicareSupplement();
@@ -277,7 +277,7 @@ public class CignaHomePageTest extends WebAPI {
 
     }
 
-
+    @Ignore
     @Test
     public void testEmployersAndBrokers() {
         homePage.checkEmployersAndBrokers();
@@ -286,17 +286,60 @@ public class CignaHomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
 
+    @Ignore
+    @Test
+    public void testMedical() {
+        homePage.checkMedical();
+        String expectedText = "Cigna Official Site | Global Health Service Company";
+        String actualText = driver.getTitle();
+        Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
+    }
 
+    @Ignore
+    @Test
+    public void testSavingsAndSpending() {
+        homePage.checkSavingsAndSpending();
+        String expectedText = "Cigna Official Site | Global Health Service Company";
+        String actualText = driver.getTitle();
+        Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
+    }
 
+    @Ignore
+    @Test
+    public void testWellnessMentalHealth() {
+        homePage.checkWellnessMentalHealth();
+        String expectedText = "Cigna Official Site | Global Health Service Company";
+        String actualText = driver.getTitle();
+        Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
+    }
 
+    @Ignore
+    @Test
+    public void testPharmacy() {
+        homePage.checkPharmacy();
+        String expectedText = "Cigna Official Site | Global Health Service Company";
+        String actualText = driver.getTitle();
+        Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
 
+    }
 
+    @Ignore
+    @Test
+    public void testDentalAndVision() {
+        homePage.checkDentalAndVision();
+        String expectedText = "Cigna Official Site | Global Health Service Company";
+        String actualText = driver.getTitle();
+        Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
+    }
 
+    @Test
+    public void testCostControl() {
+        homePage.checkCostControl();
+        String expectedText = "Cigna Official Site | Global Health Service Company";
+        String actualText = driver.getTitle();
+        Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
 
-
-
-
-
+    }
 
 
 }

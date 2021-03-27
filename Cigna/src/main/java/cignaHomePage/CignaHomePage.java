@@ -173,23 +173,44 @@ public class CignaHomePage extends WebAPI {
 
     public void checkEmployersAndBrokers() {
         mouseHoverByCSS(employersAndBrokersLocator);
+    }
+
+    public void checkMedical() {
+        mouseHoverByCSS(employersAndBrokersLocator);
         getTextByCss(medicalLocator);
 
     }
 
+    public void checkSavingsAndSpending() {
+        mouseHoverByCSS(employersAndBrokersLocator);
+        getTextByCss(savingAndSpendingLocator);
+
+    }
+
+    public void checkWellnessMentalHealth() {
+        mouseHoverByXpath(employersAndBrokersLocator1);
+        getTextByXpath(wellnessMentalHealthLocator);
 
 
+    }
 
+    public void checkPharmacy() {
+        mouseHoverByCSS(employersAndBrokersLocator);
+        getTextByCss(pharmacyLocator);
 
+    }
 
+    public void checkDentalAndVision() {
+        mouseHoverByXpath(employersAndBrokersLocator1);
+        getTextByXpath(dentalAndVisionLocator);
 
+    }
 
+    public void checkCostControl(){
+        mouseHoverByCSS(employersAndBrokersLocator);
+        getTextByCss(costControlLocator);
 
-
-
-
-
-
+    }
 
 
 
