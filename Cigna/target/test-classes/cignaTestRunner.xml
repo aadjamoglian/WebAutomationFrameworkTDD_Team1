@@ -24,7 +24,7 @@
         <parameter name="browserVersion" value="89"></parameter>
 
         <classes>
-            <class name="cignahomepagetest.CignaHomePageTest">
+            <class name="homepagetest.HomePageTest">
 
                 <methods>
                     <!--               Test case include or exclude-->

@@ -1,6 +1,8 @@
 package cignaHomepage;
 
 import common.WebAPI;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -13,6 +15,7 @@ public class CignaHomepage extends WebAPI {
     @FindBy(how = How.XPATH, using = medicareAdvantageLocator) public WebElement medicareAdvantage;
     @FindBy(how = How.XPATH,using = medicareEligibilitySearchBoxLocator) public WebElement searchBoxLocator;
     @FindBy(how = How.XPATH, using = shopForPlanButton) public WebElement planButton;
+    @FindBy(how = How.CSS, using = uploadResumeLocator) public WebElement uploadResume;
 
     public  void checkCoronaVirusResourceLink(){
         resourceCenter.click();
@@ -113,6 +116,32 @@ public class CignaHomepage extends WebAPI {
         clickByXpath(medicareLocator);
         mouseHoverByXpath(healthyAgingLocator);
         mouseHoverByXpath(depresiionAndMentalHealth);
+
+    }
+
+    public void checkCignaImage(){
+        clickByXpath(imageLocator);
+    }
+
+    public void uploadDocuments(){
+        //scrollToBottom();
+        //clickByXpath(careersLocator);
+        clickOnLink("Careers");
+        //getTextByXpath(getStartedLocator);
+        clickOnLink("Get Started");
+        uploadResume.sendKeys(documentPathLocator);
+
+
+    }
+
+    public void downloadDocuments(){
+        //clickByXpath(findAFormLocator);
+        clickOnLink("Find a Form");
+        //clickOnLink(visionFormsLocator);
+        clickOnLink("Vision Forms");
+        clickByXpath(medicalClaimLocator);
+        //clickByXpath(downloadLocator);
+        downloadFiles();
 
     }
 

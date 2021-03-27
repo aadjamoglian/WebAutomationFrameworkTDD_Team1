@@ -757,6 +757,17 @@ public class WebAPI {
         String url = driver.getCurrentUrl();
         return url;
     }
+    public void scrollToBottom() {
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("window.scrollTo(0,400)");
+    }
+
+    public void downloadFiles(){
+        WebElement addFile = driver.findElement(By.xpath("//*[@id=\"contact-us-ct\"]/section/div/dl/dd[4]/p[3]/a"));
+       // WebElement addFile = driver.findElement(By.xpath("//*[@id=\"icon\"]/iron-icon"));
+        addFile.sendKeys("C:\\Users\\farha\\Desktop\\REcording");
+    }
+
 
 
 
