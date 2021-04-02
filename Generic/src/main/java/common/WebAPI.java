@@ -140,8 +140,8 @@ public class WebAPI {
         } else {
             getLocalDriver(OS, browserName);
         }
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
         driver.manage().deleteAllCookies();
         driver.get(url);
         driver.manage().window().maximize();
@@ -206,8 +206,8 @@ public class WebAPI {
 
     @AfterMethod(alwaysRun = true)
     public void cleanUp(){
-        //driver.close();
-        driver.quit();
+//        driver.close();
+       driver.quit();
     }
 
 // Helper Method

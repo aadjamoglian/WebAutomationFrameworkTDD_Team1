@@ -15,11 +15,17 @@ public class CommercialPage extends WebAPI {
     @FindBy(xpath =commercialLocator ) public WebElement commercial;
     @FindBy(xpath =industryExpertiseLocator ) public WebElement industryExpertise;
     @FindBy(linkText =commercialAndIndustrialLocator ) public WebElement commercialAndIndustrial;
-    @FindBy(xpath =CommercialAndIndustrialLocator ) public WebElement CommercialAndIndustrial;
     @FindBy(linkText =commercialRealEstateLocator ) public WebElement commercialRealEstate;
     @FindBy(linkText =financialInstitutionsGroupLocator ) public WebElement financialInstitutionsGroup;
     @FindBy(linkText =capitalMarketsLocator ) public WebElement capitalMarkets;
     @FindBy(linkText =commercialBakingLocator ) public WebElement commercialBaking;
+    @FindBy(xpath =commercialLendingLocator ) public WebElement commercialLending;
+    @FindBy(xpath =commercialLendingTextLocator ) public WebElement commercialLendingText;
+    @FindBy(xpath =corporateCardLocator ) public WebElement corporateCard;
+    @FindBy(xpath =depositoryServicesLocator ) public WebElement depositoryServices;
+    @FindBy(xpath =depositoryServicesTextLocator ) public WebElement depositoryServicesText;
+
+
 
 
 
@@ -32,32 +38,54 @@ public class CommercialPage extends WebAPI {
       WebElement commercial = driver.findElement(By.xpath("//span[contains(text(),'Commercial')]"));
       actions.moveToElement(commercial).perform();
       //driver.findElement(By.linkText("Commercial & Industrial")).click();
-      industryExpertise.click();
-      driver.close();
   }
 public void commercialRealEstate(){
     Actions actions = new Actions(driver);
     WebElement commercial = driver.findElement(By.xpath("//span[contains(text(),'Commercial')]"));
-    actions.moveToElement(commercialRealEstate).perform();
+    actions.moveToElement(commercial).perform();
     commercialRealEstate.click();
-    driver.close();
+
 }
     public void financialInstitutionsGroup(){
         Actions actions = new Actions(driver);
         WebElement commercial = driver.findElement(By.xpath("//span[contains(text(),'Commercial')]"));
-        actions.moveToElement(financialInstitutionsGroup).perform();
+        actions.moveToElement(commercial).perform();
         financialInstitutionsGroup.click();
-        driver.close();
+
     }
     public void capitalMarkets(){
         Actions actions = new Actions(driver);
         WebElement commercial = driver.findElement(By.xpath("//span[contains(text(),'Commercial')]"));
-        actions.moveToElement(capitalMarkets).perform();
+        actions.moveToElement(commercial).perform();
         capitalMarkets.click();
-        driver.close();
+
     }
     public boolean commercialBakingDisplayed(){
         capitalMarkets();
         return commercialBaking.isDisplayed();
+    }
+    public void commercialAndIndustrial(){
+        Actions actions = new Actions(driver);
+        WebElement commercial = driver.findElement(By.xpath("//span[contains(text(),'Commercial')]"));
+        actions.moveToElement(commercial).perform();
+        commercialAndIndustrial.click();
+    }
+    public void commercialLending(){
+        Actions actions = new Actions(driver);
+        WebElement commercial = driver.findElement(By.xpath("//span[contains(text(),'Commercial')]"));
+        actions.moveToElement(commercial).perform();
+        commercialLending.click();
+    }
+    public void corporateCard(){
+        Actions actions = new Actions(driver);
+        WebElement commercial = driver.findElement(By.xpath("//span[contains(text(),'Commercial')]"));
+        actions.moveToElement(commercial).perform();
+        corporateCard.click();
+    }
+    public void depositoryServices(){
+        Actions actions = new Actions(driver);
+        WebElement commercial = driver.findElement(By.xpath("//span[contains(text(),'Commercial')]"));
+        actions.moveToElement(commercial).perform();
+        depositoryServices.click();
     }
 }

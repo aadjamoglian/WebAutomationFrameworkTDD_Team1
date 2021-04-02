@@ -14,7 +14,7 @@ public class SupportPageTest extends WebAPI {
         supportPage = PageFactory.initElements(driver, SupportPage.class);
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void supportTest() {
         supportPage.support();
         String expectedText="Welcome to AT&T Support";

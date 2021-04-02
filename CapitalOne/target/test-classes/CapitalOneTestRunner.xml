@@ -28,7 +28,10 @@
             <!--            <class name="homepagetest.KindleBooksDisplayedElementsTest"></class>-->
         <!--  <class name="commercialpagetest.CommercialPageTest"></class>-->
 
-                <class name="commercialpagetest.HelpPageTest"></class>
+<!--                <class name="commercialpagetest.SupportPageTest"></class>-->
+            <class name="commercialpagetest.CommercialPageTest"></class>
+<!--                     <class name="commercialpagetest.SignInTest"></class>-->
+
         </classes>
 
     </test>

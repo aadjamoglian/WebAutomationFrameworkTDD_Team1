@@ -24,10 +24,11 @@ public class CommercialPageTest extends WebAPI {
         Assert.assertEquals(commercialDisplay,true);
     }
     @Test(enabled = false)
-    public void commercialTest(){
+    public void commercialTest() throws InterruptedException {
         commercialPage.commercial();
-        String expectedText ="Commercial & Industrial";
-        String actualText =commercialPage.CommercialAndIndustrial.getText();
+        Thread.sleep(2000);
+        String expectedText ="INDUSTRY EXPERTISE";
+        String actualText =commercialPage.industryExpertise.getText();
         Assert.assertEquals(expectedText,actualText,"test fail");
     }
     @Test(enabled = false)
@@ -44,11 +45,39 @@ public class CommercialPageTest extends WebAPI {
         String actualUrl =driver.getCurrentUrl();
         Assert.assertEquals(expectedUrl,actualUrl,"test fail");
     }
-    @Test
-    public void commercialBakingDisplayedTest(){
+    @Test(enabled = false)
+    public void commercialBakingDisplayedTest() throws InterruptedException {
         commercialPage.commercialBakingDisplayed();
         boolean commercialPageDisplay=commercialPage.commercialBaking.isDisplayed();
         Assert.assertEquals(commercialPageDisplay,true);
+    }
+    @Test(enabled = false)
+    public void commercialAndIndustrialTest(){
+        commercialPage.commercialAndIndustrial();
+        String expectedUrl ="https://www.capitalone.com/commercial/industry-expertise/industrial-manufacturing/";
+        String actualUrl =driver.getCurrentUrl();
+        Assert.assertEquals(expectedUrl,actualUrl,"test fail");
+    }
+    @Test(enabled = false)
+    public void commercialLendingTest()  {
+        commercialPage.commercialLending();
+        String expectedText ="Commercial Lending";
+        String actualText =commercialPage.commercialLendingText.getText();
+        Assert.assertEquals(expectedText,actualText,"test fail");
+    }
+    @Test(enabled = false)
+    public void corporateCardTest()  {
+        commercialPage.corporateCard();
+        String expectedText ="Corporate Card";
+        String actualText =commercialPage.corporateCard.getText();
+        Assert.assertEquals(expectedText,actualText,"test fail");
+    }
+    @Test(enabled = true)
+    public void depositoryServicesTest()  {
+        commercialPage.depositoryServices();
+        String expectedText ="Depository Services";
+        String actualText =commercialPage.depositoryServicesText.getText();
+        Assert.assertEquals(expectedText,actualText,"test fail");
     }
 
 

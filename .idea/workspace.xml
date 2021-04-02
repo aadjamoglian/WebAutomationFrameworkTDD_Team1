@@ -49,19 +49,25 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ATT/src/main/java/supportpage" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Cigna/src/test/java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="runner" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/ATT/src/main/java/supportpage" />
+      <recent name="$PROJECT_DIR$/Cigna/src/test/java" />
+      <recent name="$PROJECT_DIR$/Cigna/src/main/java" />
       <recent name="$PROJECT_DIR$/Generic/BrowserDriver/mac" />
+      <recent name="$PROJECT_DIR$/ATT/src/main/java/supportpage" />
       <recent name="$PROJECT_DIR$/Amazon/src/main/java/homepage" />
-      <recent name="$PROJECT_DIR$/Amazon/src/test/java/homepagetest" />
-      <recent name="C:\Users\Arthur\IdeaProjects\WebAutomationFrameworkTDD_Team1\CNN\src\test\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Delta/src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="supportpagetest" />
@@ -69,47 +75,61 @@
       <recent name="homepagetest" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CommercialPageTest.commercialDisplayedTest">
-    <configuration name="C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/Amazon/src/test/resources/AmazonTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Amazon" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/Amazon/src/test/resources/AmazonTestRunner.xml" />
+  <component name="RunManager" selected="Cucumber Java.Scenario: check functionality of login account">
+    <configuration type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Cigna" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cignawebsoftwaretest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommercialPageTest.commercialDisplayedTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="CapitalOne" />
+    <configuration name="Scenario: check functionality of login account" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/Delta/src/test/java/features/HomePage.feature" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.cli.Main" />
+      <module name="Delta" />
+      <option name="NAME_FILTER" value="^check functionality of login account$" />
+      <option name="PROGRAM_PARAMETERS" value=" --format org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^check functionality of login account$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: check functionality of login account" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="commercialpagetest.*" />
+          <option name="PATTERN" value="cucumber.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="commercialpagetest" />
-      <option name="MAIN_CLASS_NAME" value="commercialpagetest.CommercialPageTest" />
-      <option name="METHOD_NAME" value="commercialDisplayedTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommercialPageTest.commercialTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="CapitalOne" />
+    <configuration name="SupportPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ATT" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="commercialpagetest.*" />
+          <option name="PATTERN" value="supportpagetest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="commercialpagetest" />
-      <option name="MAIN_CLASS_NAME" value="commercialpagetest.CommercialPageTest" />
-      <option name="METHOD_NAME" value="commercialTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="supportpagetest" />
+      <option name="MAIN_CLASS_NAME" value="supportpagetest.SupportPageTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -118,8 +138,40 @@
     </configuration>
     <configuration name="/Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/ATT/src/test/resources/ATTTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ATT" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="supportpagetest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SUITE_NAME" value="$PROJECT_DIR$/ATT/src/test/resources/ATTTestRunner.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/CNN/src/test/resources/CNNTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CNN" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/CNN/src/test/resources/CNNTestRunner.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/Cigna/src/test/resources" />
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -136,13 +188,104 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="/Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/CapitalOne/src/test/resources/CapitalOneTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CapitalOne" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="commercialpagetest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/CapitalOne/src/test/resources/CapitalOneTestRunner.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/Cigna/src/test/resources/CignaTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CNN" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/Cigna/src/test/resources/CignaTestRunner.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/Cigna/src/test/resources" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/Cigna/src/test/resources/CignaTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Cigna" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/Cigna/src/test/resources/CignaTestRunner.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/Cigna/src/test/resources/CignaTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Cigna" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cignawebsoftwaretest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/Cigna/src/test/resources/CignaTestRunner.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Cucumber Java.Scenario: check functionality of login account" />
+      <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/CNN/src/test/resources/CNNTestRunner.xml" />
+      <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/CapitalOne/src/test/resources/CapitalOneTestRunner.xml" />
+      <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/ATT/src/test/resources/ATTTestRunner.xml" />
+      <item itemvalue="TestNG.SupportPageTest" />
+      <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/Cigna/src/test/resources/CignaTestRunner.xml" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CommercialPageTest.commercialDisplayedTest" />
-        <item itemvalue="TestNG.CommercialPageTest.commercialTest" />
-        <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/CapitalOne/src/test/resources/CapitalOneTestRunner.xml" />
-        <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/ATT/src/test/resources/ATTTestRunner.xml" />
-        <item itemvalue="TestNG.C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/Amazon/src/test/resources/AmazonTestRunner.xml" />
+        <item itemvalue="Cucumber Java.Scenario: check functionality of login account" />
+        <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/Cigna/src/test/resources/CignaTestRunner.xml" />
+        <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/Cigna/src/test/resources/CignaTestRunner.xml" />
+        <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/Cigna/src/test/resources/CignaTestRunner.xml" />
       </list>
     </recent_temporary>
   </component>
