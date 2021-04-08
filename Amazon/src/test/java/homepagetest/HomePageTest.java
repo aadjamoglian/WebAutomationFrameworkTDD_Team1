@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
 import java.util.concurrent.ScheduledExecutorService;
 
 public class HomePageTest extends WebAPI {
@@ -21,7 +22,6 @@ public class HomePageTest extends WebAPI {
 //        registration = PageFactory.initElements(driver, Registration.class);
     }
 
-
     @Test(enabled = true)
     public void testSearchBox1() throws InterruptedException {
         getInit();
@@ -32,23 +32,26 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText,expectedText,"Product does not match");
     }
 
+    @Test
+    public void testExcelRead() throws IOException {
+        homePage.searchFromExcelFile();
+        String expectedText = "Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more";
+        //String actualText=homePage.searchText.getText();
+        String actualText=driver.getTitle();
+        Assert.assertEquals(actualText,expectedText,"Product does not match");
+    }
 
-
-    @Ignore
     @Test
     public void testSearchBox() throws InterruptedException {
 //        getInit();
 //        call action method by reference variable
         homePage.searchBox();
-
     }
-
-
 
     @Test
     public void testLanguages() throws InterruptedException {
         homePage.checkLanguagesSpanish();
-        String expectedText="Amazon.com: eBooks Kindle: Tienda Kindle: Nonfiction, Literature & Fiction, Foreign Languages, Business & Money y más";
+        String expectedText="Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more";
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText,expectedText,"Link is not clickable");
     }
@@ -72,7 +75,7 @@ public class HomePageTest extends WebAPI {
     @Test
     public void testCameraAndPhoto(){
         homePage.checkCameraAndPhotoLink();
-        String expectedText="Amazon Best Sellers: Best Camcorders";
+        String expectedText="Amazon Best Sellers: Best Camera";
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText,expectedText,"Link is not clickable");
     }
@@ -80,7 +83,7 @@ public class HomePageTest extends WebAPI {
     @Test
     public void testDSLRCamera(){
         homePage.checkDSLRCameraLink();
-        String expectedText="Amazon Best Sellers: Best DSLR Cameras";
+        String expectedText="DSLR Cameras - Amazon.com";
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText,expectedText,"Link is not clickable");
     }
@@ -88,46 +91,15 @@ public class HomePageTest extends WebAPI {
     @Test
     public void testAppliancesLink(){
         homePage.checkAppliancesLink();
-        String expectedText="Amazon Best Sellers: Best Appliances";
+        String expectedText="Amazon.com Best Sellers: The most popular items on Amazon";
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText,expectedText,"Link is not clickable");
     }
-//    @Test
-//    public void testDishwashersLink(){
-//        homepage.checkDishwashersLink();
-//        String expectedText="Amazon Best Sellers: Best Portable Dishwashers";
-//        String actualText=driver.getTitle();
-    //Assert.assertEquals(actualText,expectedText,"Link is not clickable");
-//    }
-
-    @Test
-    public void testCooktopsLink() throws InterruptedException {
-        homePage.checkCooktopsLink();
-        String expectedText="Amazon Best Sellers: Best Cooktops";
-        String actualText=driver.getTitle();
-        Assert.assertEquals(actualText,expectedText,"Link is not clickable");
-    }
-
-//    @Test
-//    public void testFreezersLink(){
-//        homepage.checkFreezersLink();
-//        String expectedText="Amazon Best Sellers: Best Chest Freezers";
-//        String actualText=driver.getTitle();
-    //Assert.assertEquals(actualText,expectedText,"Link is not clickable");
-//    }
-//    @Test
-//    public void testRefrigeratorsLink(){
-//        homepage.checkFreezersLink();
-//        String expectedText="Amazon Best Sellers: Best Refrigerators";
-//        String actualText=driver.getTitle();
-    //Assert.assertEquals(actualText,expectedText,"Link is not clickable");
-//    }
-
 
     @Test
     public void testAutomotiveLink(){
         homePage.checkAutomotiveLink();
-        String expectedText="Car care";
+        String expectedText="Car Care";
         String actualText=driver.findElement(By.xpath("//*[@id=\"zg_browseRoot\"]/ul/ul/li[1]/a")).getText();
         Assert.assertEquals(actualText,expectedText,"Link is not clickable");
     }
@@ -143,7 +115,7 @@ public class HomePageTest extends WebAPI {
     @Test
     public void testKindleBooks(){
         homePage.checkKindleBooks();
-        String expectedText="Kindle Singles";
+        String expectedText="Kindle Books";
         String actualText=driver.findElement(By.xpath("//*[@id=\"nav-xshop\"]/a[8]")).getText();
         Assert.assertEquals(actualText,expectedText,"Link is not clickable");
     }
@@ -183,7 +155,7 @@ public class HomePageTest extends WebAPI {
     @Test
     public void testKindleExclusiveDeals(){
         homePage.checkKindleExclusiveDeals();
-        String expectedText="Amazon.com: Kindle Book Deals for $3.99 or Less";
+        String expectedText="Amazon.com: Kindle Exclusive book deals";
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText,expectedText,"Link is not clickable");
     }
@@ -207,7 +179,7 @@ public class HomePageTest extends WebAPI {
     @Test
     public void testMakeupLink(){
         homePage.checkMakeupLink();
-        String expectedText="Amazon Best Sellers: Best Eye Makeup";
+        String expectedText="Amazon Best Sellers: Best Beauty & Personal Care";
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText,expectedText,"Link is not clickable");
 
@@ -224,29 +196,23 @@ public class HomePageTest extends WebAPI {
     @Test
     public void textMakeupSetsLink(){
         homePage.checkMakeupSetLink();
-        String expectedText="Amazon Best Sellers: Best Makeup Sets";
+        String expectedText="Amazon Best Sellers: Best Makeup";
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText,expectedText,"Link is not clickable");
     }
+
     @Test
     public void textSkinCareLink() throws InterruptedException {
         homePage.checkSkinCareLink();
-        String expectedText="Amazon Best Sellers: Best Body Cleansers";
+        String expectedText="Skin Care Products - Amazon.com";
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText,expectedText,"Link is not clickable");
     }
-//    @Test
-//    public void testMakeupPaletteLink(){
-//        homepage.checkMakeupPalletesLink();
-//        String expectedText="Amazon Best Sellers: Best Makeup Palettes";
-//        String actualText=driver.getTitle();
-//
-//    }
 
     @Test
     public void testFaceMakeupLink(){
         homePage.checkFaceMakeupLink();
-        String expectedText="Amazon Best Sellers: Best Face Makeup";
+        String expectedText="Amazon.com: Neutrogena Day & Night Wipes with Makeup Remover Face Cleansing Towelettes & Night Calming Facial Cloths, Alcohol-Free Wipes to Remove Dirt, Oil & Waterproof Mascara, 3 Packs of 25 ct, 75 ct: Beauty";
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText,expectedText,"Link is not clickable");
     }
@@ -254,77 +220,57 @@ public class HomePageTest extends WebAPI {
     @Test
     public void testFragranceLink(){
         homePage.checkFragranceLink();
-        String expectedText="Amazon Best Sellers: Best Women's Fragrances";
+        String expectedText="Amazon.com : Women's Fragrances";
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText,expectedText,"Link is not clickable");
     }
-
-//    @Test
-//    public void testDropDown(){
-//        homepage.allDeptDropDown();
-//        String expectedText="Amazon.com :";
-//        String actualText=driver.getTitle();
-    //Assert.assertEquals(actualText,expectedText,"Link is not clickable");
-//    }
-//    @Test
-//    public void testMenuBar() throws InterruptedException {
-//        homepage.checkMenuBar();
-//        String expectedText="Toys & Games";
-//        String actualText=driver.findElement(By.linkText("Toys & Games")).getText();
-//         Assert.assertEquals(actualText,expectedText,"Link is not clickable");
-//    }
 
     @Test
     public void testAutomotivePartsLink() throws InterruptedException {
         homePage.checkAutomotivePartsLink();
-        String expectedText="Amazon.com : Automotive Body Parts & Trim";
+        String expectedText="Amazon Best Sellers: Best Automotive";
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText,expectedText,"Link is not clickable");
 
-    }
-
-    @Test
-    public void testNewsstand(){
-        homePage.checkNewsstand();
-        String expectedText="The New York Times";
-        String actualText=driver.findElement(By.linkText("The New York Times")).getText();
-        Assert.assertEquals(actualText,expectedText,"Link is not clickable");
-    }
-
-    @Test
-    public void testNewYorkTimes(){
-        homePage.checkNewYorkTimes();
-        String expectedText="Amazon.com: The New York Times - Daily Edition for Kindle: Kindle Store";
-        String actualText=driver.getTitle();
-        Assert.assertEquals(actualText,expectedText,"Link is not clickable");
-    }
-
-    @Test
-    public void testUSAToday(){
-        homePage.checkUSATodayLink();
-        String expectedText="Amazon.com: USA TODAY, Paid No-Ads Daily Edition: Kindle Store";
-        String actualText=driver.getTitle();
-        Assert.assertEquals(actualText,expectedText,"Link is not clickable");
     }
 
     @Test
     public void testDigitalMegazines(){
         homePage.checkDigitalMegazines();
-        String expectedText="Amazon.com: Top Kindle Magazine & Newspaper Deals: Kindle Store";
+        String expectedText="Kindle Newsstand - Amazon.com";
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText,expectedText,"Link is not clickable");
     }
 
     @Test
-    public void testKindleMegazines(){
-        homePage.checkKindleMegazines();
-        String expectedText="Amazon.com: Kindle Newsstand: Kindle Store: Lifestyle & Culture, Men's Interests, Entertainment & Pop Culture & More";
+    public void textSkinCareLink1() throws InterruptedException {
+        homePage.checkSkinCareLink();
+        String expectedText="Skin Care Products - Amazon.com";
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText,expectedText,"Link is not clickable");
     }
 
+    @Test
+    public void testKindleBooksUnder$2Deal(){
+        homePage.checkKindleBooksUnder$2();
+        String expectedText="Amazon.com: 50 Kindle books for $2 or less";
+        String actualText=driver.getTitle();
+        Assert.assertEquals(actualText,expectedText,"Link is not clickable");
+    }
 
+    @Test
+    public void testDSLRCameras(){
+        homePage.checkDSLRCameraLink();
+        String expectedText="DSLR Cameras - Amazon.com";
+        String actualText=driver.getTitle();
+        Assert.assertEquals(actualText,expectedText,"Link is not clickable");
+    }
 
-
-
-}
+    @Test
+    public void testAutomotiveLinks(){
+        homePage.checkAutomotiveLink();
+        String expectedText="Car Care";
+        String actualText=driver.findElement(By.xpath("//*[@id=\"zg_browseRoot\"]/ul/ul/li[1]/a")).getText();
+        Assert.assertEquals(actualText,expectedText,"Link is not clickable");
+    }
+    }

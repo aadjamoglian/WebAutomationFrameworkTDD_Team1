@@ -2,13 +2,17 @@ package cnnhomepage;
 
 
 import common.WebAPI;
-import org.openqa.selenium.By;
+import databases.ConnectToSqlDB;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import org.testng.annotations.Ignore;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import utilities.DataReader;
 
 import java.io.IOException;
+import java.sql.SQLException;
+import java.util.List;
 
 import static cnnhomepage.CNNHomePageWebElement.*;
 
@@ -20,11 +24,39 @@ public class CNNHomePage extends WebAPI {
     @FindBy(how = How.XPATH, using = weatherSearchBoxLocator) public WebElement weatherSearchBox;
     @FindBy(how = How.XPATH, using = weatherCityLocator) public WebElement weatherCity;
     @FindBy(how = How.XPATH, using = getForecastLocator) public WebElement forecastLocator;
+    @FindBy(how = How.XPATH, using = emailAddressLocator) public WebElement emailAddress;
+    @FindBy(how = How.XPATH, using = passwordLocator) public WebElement passwords;
 
+    public CNNHomePage() throws IOException {
+    }
 
+    public void checkLogIn() throws SQLException, IOException, ClassNotFoundException, InterruptedException {
+        ConnectToSqlDB connect= new ConnectToSqlDB();
+        String tableName="logininfo";
+        ConnectToSqlDB.connectToSqlDatabase();
+        ConnectToSqlDB.statement = ConnectToSqlDB.connect.createStatement();
+        ConnectToSqlDB.resultSet = ConnectToSqlDB.statement.executeQuery("select * from logininfo where idlogininfo=1");
 
+        while( ConnectToSqlDB.resultSet.next()){
+            clickByXpath(accountLocator);
+            emailAddress.sendKeys(ConnectToSqlDB.resultSet.getString("Email"));
+            passwords.sendKeys(ConnectToSqlDB.resultSet.getString("Password"));
+            sleepFor(3);
+            clickByXpath(loginLocator);
+        }
+    }
 
-
+    public void checkDataProvider() throws IOException, InterruptedException {
+        DataReader read = new DataReader();
+        String[][] data= read.fileReader1("datatest/ReadData.xlsx",1);
+        String readdata = data[1][0];
+        String readDat = data[1][1];
+        clickByXpath(accountLocator);
+        emailAddress.sendKeys(readdata);
+        passwords.sendKeys(readDat);
+        sleepFor(3);
+        clickByXpath(loginLocator);
+    }
 
     public void checkSearchBox() throws InterruptedException {
         searchBox.sendKeys(searchElement);
@@ -41,15 +73,18 @@ public class CNNHomePage extends WebAPI {
         clickByXpath(worldNewsLocator);
         clickOnElement(asiaNewsLocator);
     }
+
     public void checkAustraliaLink(){
         checkWorldNews();
         clickOnLink("Australia");
         //clickOnElement(australiasWildfireLocator);
     }
+
     public void checkMenuBar() throws InterruptedException {
         clickOnElement(menuBarLocator);
         sleepFor(2);
     }
+
     public void checkSportsLink(){
         clickOnElement(menuBarLocator);
         clickOnElement(sportsNewsLocator);
@@ -72,8 +107,6 @@ public class CNNHomePage extends WebAPI {
         weatherSearchBox.sendKeys(weatherCityLocator);
         forecastLocator.click();
     }
-
-
 
     public void checkWorldFootballLink(){
         checkSportsLink();
@@ -110,26 +143,22 @@ public class CNNHomePage extends WebAPI {
         getTextByXpath(europeNewsLocator);
     }
 
-//    public void checkWorldImage(){
-//        clickByXpath(worldImageLocator);
-//            }
-
     public void checkTravelLink() throws InterruptedException {
         checkMenuBar();
         getTextByXpath(travelLocator);
         clickOnLink("Destinations");
         clickOnLink("California");
-
     }
+
     public void checkLiveTvLink(){
         clickByXpath(liveTVLocator);
     }
-
 
     public void checkChineNewsLink(){
         checkWorldNews();
         clickOnLink("China");
     }
+
     public void checkAmericasNewsLink() throws InterruptedException {
         checkMenuBar();
         getTextByCss(americasNewsLocator);
@@ -139,25 +168,16 @@ public class CNNHomePage extends WebAPI {
     public void checkUnitedKingdom() throws InterruptedException {
         checkMenuBar();
         clickByXpath(unitedKingdomNewsLocator);
-
     }
+
     public void checkIndiaNewsLocator(){
         checkWorldNews();
         clickOnElement(indiaNewsLocator);
     }
+
     public void checkMiddleEastNewsLink() throws InterruptedException, IOException {
         checkMenuBar();
         getTextByXpath(middleEastNewsLocator);
         takeScreenShot();
     }
-
-
-
-
-//    public void checkEditionDropDownLink(){
-//        clickByLinkText("Edition");
-//        getTextByXpath(internationalLocator);
-//        clickByXpath(trendingLocator);
-//    }
-
 }

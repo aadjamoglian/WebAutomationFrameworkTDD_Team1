@@ -41,6 +41,7 @@
                     <!--                Test case include or exclude -->
                     <!--                <exclude name="testSearchBox"></exclude>-->
                     <!--                <include name="testLogin"></include>-->
+                                    <include name="HomePage"></include>
                 </methods>
 
                 <!--            Add more test classes-->

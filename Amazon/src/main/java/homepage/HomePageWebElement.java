@@ -46,6 +46,9 @@ public class HomePageWebElement {
     public static final String giftSetLink="//*[@id=\"zg_browseRoot\"]/ul/ul/li[4]/a";
     public static final String makeUpStLocator="//*[@id=\"zg_browseRoot\"]/ul/ul/ul/li[7]/a";
     public static final String cooktopLocators="//a[normalize-space()='Cooktops']";
+    public static final String filePath=System.getProperty("user.dir") + "/testdata/ReadData.xlsx";
+
+
 
 
 

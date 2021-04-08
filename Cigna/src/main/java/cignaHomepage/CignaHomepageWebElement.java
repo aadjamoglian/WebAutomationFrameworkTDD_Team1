@@ -34,15 +34,14 @@ public class CignaHomepageWebElement {
     public static final String depresiionAndMentalHealth="//*[@id=\"healthy-aging\"]/div[2]/div/ul/li[2]/a";
     public static final String imageLocator="//nav[@class='navbar global-nav navbar-expand-lg navbar-white fixed-top bg-white d-lg-none']//a[@class='navbar-brand']//*[local-name()='svg']";
     public static final String careersLocator="//*[@id=\"1555225043682\"]/div/div[1]/div/div/div[2]/div/div[2]/ul/li[3]/a";
-    public static final String getStartedLocator="/html/body/div[2]/div[2]/section[4]/div/div[2]/div[2]/div[1]/div/div/div[2]/button/ppc-content";
+    public static final String getStartedLocator="upload-action-btn btn default-button";
     public static final String uploadResumeLocator="#ph-dropzone";
     public static final String documentPathLocator="C:\\Users\\farha\\Desktop\\JAVA problem solving questions.docx";
     public static final String findAFormLocator="//*[@id=\"1555225043682\"]/div/div[1]/div/div/div[1]/div/div[1]/ul/li[10]/a";
    public static final String visionFormsLocator="//*[@id=\"contact-us-ct\"]/section/div/dl/dt[4]/a";
-    public static final String medicalClaimLocator="//*[@id=\"contact-us-ct\"]/section/div/dl/dt[4]/a";
-    public static final String downloadLocator="//*[@id=\"icon\"]/iron-icon";
-//    public static final String
-//    public static final String
+    public static final String medicalClaimLocator="//*[@id=\"contact-us-ct\"]/section/div/dl/dd[4]/p[3]/a";
+    public static final String downloadLocator="//a[normalize-space()='Indemnity Vision (medical) claim']";
+
 
 
 }

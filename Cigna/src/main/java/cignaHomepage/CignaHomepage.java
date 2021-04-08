@@ -4,6 +4,7 @@ import common.WebAPI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
@@ -16,34 +17,34 @@ public class CignaHomepage extends WebAPI {
     @FindBy(how = How.XPATH,using = medicareEligibilitySearchBoxLocator) public WebElement searchBoxLocator;
     @FindBy(how = How.XPATH, using = shopForPlanButton) public WebElement planButton;
     @FindBy(how = How.CSS, using = uploadResumeLocator) public WebElement uploadResume;
+    @FindBy(how = How.CSS, using = getStartedLocator) public WebElement getStarted;
 
-    public  void checkCoronaVirusResourceLink(){
-        resourceCenter.click();
+    public void downloadDocuments() throws InterruptedException {
+        //clickByXpath(findAFormLocator);
+        clickOnLink("Find a Form");
+        //clickOnLink(visionFormsLocator);
+        clickOnLink("Vision Forms");
+        //clickByXpath(medicalClaimLocator);
+        //clickByXpath(downloadLocator);
+        clickByXpath1(medicalClaimLocator);
+        sleepFor(3);
+        clickByXpath1(downloadLocator);
+        //downloadFiles();
     }
-    public void checkMedicareLink(){
-        clickByXpath(medicareLocator);
-    }
-    public void checkMedicareAdvantageLink(){
-        clickByXpath(medicareLocator);
-        mouseHoverByXpath(medicareLocator);
-    }
+    public void uploadDocuments() throws InterruptedException {
 
-    public void checkPrescriptionDrugPlan(){
-        checkMedicareLink();
-        mouseHoverByCSS(prescriptionDrugLocator);
-    }
-    public void checkMedicareSupplementInsurance(){
-        checkPrescriptionDrugPlan();
-        mouseHoverByXpath(medicareSupplementLocator);
-    }
-    public void checkEnrollmentAndEligibility(){
-        checkMedicareLink();
-        mouseHoverByXpath(enrollmentAndEligibilityLocator);
-    }
-    public void checkMedicareAdvantageEnrollementAndEligibility() throws InterruptedException {
-        checkEnrollmentAndEligibility();
-        sleepFor(2);
-        mouseHoverByCSS(medicareEnrollmentAndEligibilityLocator);
+        clickOnLink("Careers");
+        scrollDown();
+        //sleepFor(5);
+        //clickByXpath1(getStartedLocator);
+        clickOnLink("Find your career");
+        clickOnElement1(getStartedLocator);
+        //getStarted.click();
+        //clickOnLink("Get Started");
+        //uploadResume.sendKeys(documentPathLocator);
+        upLoadFile(uploadResumeLocator,documentPathLocator);
+
+
     }
 
     public void checkMedicareEligibilitySearchBox() throws InterruptedException {
@@ -80,6 +81,39 @@ public class CignaHomepage extends WebAPI {
         mouseHoverByXpath(understandingMedicareLocator);
         mouseHoverByCSS(understandingMedicareOverviewLocator);
     }
+
+    public  void checkCoronaVirusResourceLink(){
+        resourceCenter.click();
+    }
+    public void checkMedicareLink(){
+        clickByXpath(medicareLocator);
+    }
+    public void checkMedicareAdvantageLink(){
+        clickByXpath(medicareLocator);
+        mouseHoverByXpath(medicareLocator);
+    }
+
+    public void checkPrescriptionDrugPlan(){
+        checkMedicareLink();
+        mouseHoverByCSS(prescriptionDrugLocator);
+    }
+
+    public void checkMedicareSupplementInsurance(){
+        checkPrescriptionDrugPlan();
+        mouseHoverByXpath(medicareSupplementLocator);
+    }
+
+    public void checkEnrollmentAndEligibility(){
+        checkMedicareLink();
+        mouseHoverByXpath(enrollmentAndEligibilityLocator);
+    }
+
+    public void checkMedicareAdvantageEnrollementAndEligibility() throws InterruptedException {
+        checkEnrollmentAndEligibility();
+        sleepFor(2);
+        mouseHoverByCSS(medicareEnrollmentAndEligibilityLocator);
+    }
+
     public void checkContactUsLink(){
         clickByLinkText("Contact Us");
 
@@ -107,6 +141,7 @@ public class CignaHomepage extends WebAPI {
         mouseHoverByXpath(memberResourcesAndServicesLocator);
         mouseHoverByXpath(premiumPaymentOptionsLocator);
     }
+
     public void checkhealthyAging(){
         clickByXpath(medicareLocator);
         mouseHoverByXpath(healthyAgingLocator);
@@ -122,29 +157,4 @@ public class CignaHomepage extends WebAPI {
     public void checkCignaImage(){
         clickByXpath(imageLocator);
     }
-
-    public void uploadDocuments(){
-        //scrollToBottom();
-        //clickByXpath(careersLocator);
-        clickOnLink("Careers");
-        //getTextByXpath(getStartedLocator);
-        clickOnLink("Get Started");
-        uploadResume.sendKeys(documentPathLocator);
-
-
     }
-
-    public void downloadDocuments(){
-        //clickByXpath(findAFormLocator);
-        clickOnLink("Find a Form");
-        //clickOnLink(visionFormsLocator);
-        clickOnLink("Vision Forms");
-        clickByXpath(medicalClaimLocator);
-        //clickByXpath(downloadLocator);
-        downloadFiles();
-
-    }
-
-
-
-}

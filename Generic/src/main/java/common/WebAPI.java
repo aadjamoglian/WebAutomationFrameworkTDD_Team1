@@ -2,9 +2,13 @@ package common;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
+import databases.ConnectToSqlDB;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.*;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -17,26 +21,21 @@ import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import org.testng.annotations.Optional;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.StringWriter;
+import java.io.*;
 import java.lang.reflect.Method;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-public class WebAPI {
+public class WebAPI extends  ConnectToSqlDB {
     // Config class :
 
     //ExtentReport
@@ -119,8 +118,8 @@ public class WebAPI {
 
     // Browser Setup
     public static WebDriver driver=null;
-    public static String browserStack_userName = "arthuradjamoglia1";
-    public static String browserStack_accessKey = "kqCbxkGyFsYtkCiycjEx";
+    public static String browserStack_userName = "farhanachowdhury1";
+    public static String browserStack_accessKey = "xYfKWajUDQpJrEZV8hxX";
     public static String sauceLabs_userName = "";
     public static String sauceLabs_accessKey = "";
 
@@ -757,15 +756,86 @@ public class WebAPI {
         String url = driver.getCurrentUrl();
         return url;
     }
-    public void scrollToBottom() {
-        JavascriptExecutor executor = (JavascriptExecutor) driver;
-        executor.executeScript("window.scrollTo(0,400)");
+    public void scrollDown(){
+        ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
     }
 
     public void downloadFiles(){
-        WebElement addFile = driver.findElement(By.xpath("//*[@id=\"contact-us-ct\"]/section/div/dl/dd[4]/p[3]/a"));
+        WebElement addFile = driver.findElement(By.xpath("//*[@id=\"download\"]"));
        // WebElement addFile = driver.findElement(By.xpath("//*[@id=\"icon\"]/iron-icon"));
-        addFile.sendKeys("C:\\Users\\farha\\Desktop\\REcording");
+        addFile.sendKeys("C:\\Users\\farha\\Desktop\\Demo");
+    }
+
+    public void mouseOver(String locator){
+        Actions action= new Actions(driver);
+        action.moveToElement(driver.findElement(By.xpath(locator))).build().perform();
+
+    }
+
+    public static String readExcelFile(String fileName, int sheetNumber) {
+        try {
+            FileInputStream inputStream = new FileInputStream(new File(fileName));
+            Workbook workbook = new XSSFWorkbook(inputStream);
+            Sheet dataTypeSheet = workbook.getSheetAt(sheetNumber);
+            Iterator<Row> rowIterator = dataTypeSheet.iterator();
+            while (rowIterator.hasNext()) {
+                Row currentRow = rowIterator.next();
+                Iterator<Cell> cellIterator = currentRow.iterator();
+                while (cellIterator.hasNext()) {
+                    Cell currentCell = cellIterator.next();
+
+                    if (currentCell.getCellType() == CellType.STRING) {
+                        System.out.print(currentCell.getStringCellValue() + " ");
+
+                    } else if (currentCell.getCellType() == CellType.NUMERIC) {
+                        System.out.print(currentCell.getNumericCellValue());
+                    }
+                }
+                System.out.println();
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            System.out.println("File not found Exception");
+
+        } catch (IOException e1) {
+            e1.printStackTrace();
+            System.out.println("Input Output Exception");
+        }
+
+        return fileName;
+    }
+
+//        static Workbook book;
+//        static Sheet sheet;
+//
+//        public static final String testDataPath="../WebAutomationFrameworkTDD_Team1/CNN/src/test/java/testdata/DataProvider.xlsx";
+//
+//        public static Object[][] getTestData(String sheetName){
+//            FileInputStream file = null;
+//            try {
+//                file= new FileInputStream(testDataPath);
+//            } catch (FileNotFoundException e) {
+//                e.printStackTrace();
+//            }
+//            try {
+//                book= WorkbookFactory.create(file);
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//            sheet= book.getSheet(sheetName);
+//            Object[][] data= new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
+//            for (int i=0; i<sheet.getLastRowNum(); i++){
+//                for (int k=0; k<sheet.getRow(0).getLastCellNum();k++){
+//                    data[i][k]=sheet.getRow(i+1).getCell(k).toString();
+//                }
+//            }
+//            return data;
+//        }
+
+
+
+
+
     }
 
 
@@ -774,4 +844,8 @@ public class WebAPI {
 
 
 
-}
+
+
+
+
+

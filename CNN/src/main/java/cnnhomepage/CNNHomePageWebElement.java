@@ -38,12 +38,11 @@ public class CNNHomePageWebElement {
     public static final String weatherCityLocator="Warren, MI";
     public static final String getForecastLocator="//*[@id=\"weather__local-query-form\"]/input";
     public static final String liveTVLocator="//*[@id=\"header-nav-container\"]/div/div[1]/div/div[4]/a/span";
-
-
-
-
-
-
+    public static final String accountLocator="//header/div[1]/div[1]/div[1]/div[6]/div[1]/*[1]";
+    public static final String testDataPath="../WebAutomationFrameworkTDD_Team1/testdata/DataProvider.xlsx";
+    public static final String emailAddressLocator="//body/div[@id='nav__plain-header']/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/label[1]/div[1]/input[1]";
+    public static final String passwordLocator="//body/div[@id='nav__plain-header']/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/label[1]/div[1]/input[1]";
+    public static final String loginLocator="//body/div[@id='nav__plain-header']/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/button[1]/*[1]";
 
 
 
