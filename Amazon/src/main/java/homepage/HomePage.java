@@ -83,8 +83,10 @@ public void checkCellPhonesAndAccessories(){
     }
 
     public void checkBooksLink() {
-        getTextByCss(booksLocator);
-        getTextByXpath(textBooksLocator);
+        //getTextByCss(booksLocator);
+        clickOnLink("Books");
+        clickByXpath(textBooksLocator);
+        //clickOnLink("Textbooks");
     }
 
     public void checkFashionLink() {
@@ -93,13 +95,17 @@ public void checkCellPhonesAndAccessories(){
     }
 
     public void checkGiftCard() {
-        getTextByCss(giftCardsLocator);
-        getTextByXpath(birthdayGiftLocator);
+//        getTextByCss(giftCardsLocator);
+        clickOnLink("Gift Cards");
+        clickByXpath(birthdayGiftLocator);
+        //clickOnLink("Birthdays");
     }
 
     public void checkToysAndGames1() {
-        getTextByCss(toysAndGamesLocator);
-        getTextByXpath(puzzlesLocator);
+        //getTextByCss(toysAndGamesLocator);
+        clickOnLink("Toys & Games");
+        clickByXpath(puzzlesLocator);
+        //clickOnLink("Puzzles");
     }
 
     public void checkHobbiesLink() {
@@ -128,12 +134,13 @@ public void checkCellPhonesAndAccessories(){
         getTextByCss(mensSectionLocator);
     }
 
-    public void checkFashion() {
-        clickOnLink("Fashion");
-        clickOnLink("Men");
-        getTextByXpath(sweaterLinkLocator);
-
-    }
+//    public void checkFashion() {
+//        clickOnLink("Fashion");
+//        //clickOnLink("Men");
+//        mouseHoverByXpath("//*[@id=\"nav-subnav\"]/a[3]/span[1]");
+//        clickByXpath(sweaterLinkLocator);
+//
+//    }
 
     public void checkAmazonHome() {
         clickOnLink("Amazon Home");
@@ -141,7 +148,7 @@ public void checkCellPhonesAndAccessories(){
     }
 
     public void checkLanguage() {
-        getTextByXpath(languageLocator);
+        clickByXpath(languageLocator);
         clickByXpath(englishLanguageLocator);
     }
 
@@ -153,7 +160,7 @@ public void checkCellPhonesAndAccessories(){
     public void checkHomeOffice() {
         clickOnLink("Amazon Home");
         clickOnElement(homeOfficeLocator);
-        getTextByCss(deskLocator);
+        getTextByXpath(deskLocator);
 
     }
 
@@ -163,34 +170,49 @@ public void checkCellPhonesAndAccessories(){
     }
 
     public void checkComputers() {
-        getTextByXpath(computerLocator);
+        clickOnLink("Computers");
+        //clickByXpath(computerLocator);
         clickOnElement(monitorLocator);
     }
 
     public void checkDesktopsLink() {
-        getTextByCss(computerLocator);
-        getTextByXpath(desktopsLocator);
+        getTextByXpath(computerLocator);
+        //clickByXpath(desktopsLocator);
+        clickOnLink("Desktops");
     }
 
     public void checkLaptops() {
         getTextByXpath(computerLocator);
-        clickOnLink("Laptops");
+        clickByXpath(laptopsLocator);
 
 
     }
 
     public void checkTablets() {
         getTextByXpath(computerLocator);
-        getTextByCss(tabletLocator);
+        //clickByXpath(tabletLocator);
+        clickOnLink("Tablets");
         mouseHoverByXpath(allTabletLocator);
 
     }
 
 public void checkMonitors(){
         getTextByXpath(computerLocator);
-        clickOnLink("Monitors");
+        //clickByXpath(monitorLocator);
+        clickOnLink("Monitor");
 }
 
+    public void checkHomeOfficeLinks() {
+        clickOnLink("Amazon Home");
+        clickOnElement(homeOfficeLocator);
+        getTextByXpath(deskLocator);
+
+    }
+    public void checkStorageLink() {
+        clickOnLink("Toys & Games");
+        getTextByCss(storageLocator);
+
+    }
 
 
 

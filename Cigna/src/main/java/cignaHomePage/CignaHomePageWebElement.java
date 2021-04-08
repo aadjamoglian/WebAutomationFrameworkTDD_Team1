@@ -42,8 +42,8 @@ public class CignaHomePageWebElement {
     public static final String pharmacyLocator="#plans-services-2 > div > div:nth-child(1) > ul > li:nth-child(4) > a";
     public static final String dentalAndVisionLocator="//*[@id=\"plans-services-2\"]/div/div[1]/ul/li[5]/a";
     public static final String costControlLocator="#plans-services-2 > div > div:nth-child(1) > ul > li:nth-child(6) > a";
-//    public static final String
-//    public static final String
+    public static final String additionalInsuranceOptionLocator= "//*[@id=\"plans-services-2\"]/div/div[2]/ul/li/a";
+    public static final String healthCareProvidersLocator="//*[@id=\"health-care-providers-level-one-link\"]";
 //    public static final String
 //    public static final String
 //    public static final String

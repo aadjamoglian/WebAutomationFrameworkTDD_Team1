@@ -18,7 +18,7 @@
 
         <classes>
     <!--        Calling Test Class -->
-            <class name="arthurtest.CNNArthurTest">
+            <class name="cnnhomepagetest.CNNHomePageTest">
                 <methods>
     <!--                Test case include or exclude -->
     <!--                <exclude name="testSearchBox"></exclude>-->
@@ -35,7 +35,7 @@
 
         <classes>
             <!--        Calling Test Class -->
-            <class name="arthurtest.CNNArthurTest">
+            <class name="cnnhomepagetest.CNNHomePageTest">
 
                 <methods>
                     <!--                Test case include or exclude -->

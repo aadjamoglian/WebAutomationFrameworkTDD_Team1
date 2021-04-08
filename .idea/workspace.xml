@@ -6,6 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="7164e315-e4a8-47c7-bcc3-62f03911cb44" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/Extent-Report/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/Extent-Report/ExtentReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/homepage/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/main/java/homepage/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/homepage/HomePageWebElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/main/java/homepage/HomePageWebElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/homepagetest/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/java/homepagetest/HomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/homepage/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/homepage/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/homepage/HomePageWebElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/homepage/HomePageWebElement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/AmazonTestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/AmazonTestRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/homepagetest/HomePageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/homepagetest/HomePageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNN/Extent-Report/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/CNN/Extent-Report/ExtentReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNN/src/main/java/arthur/CNNArthur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNN/src/test/java/arthurtest/CNNArthurTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNN/src/test/resources/CNNTestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CNN/src/test/resources/CNNTestRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNN/target/test-classes/CNNTestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CNN/target/test-classes/CNNTestRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapitalOne/Extent-Report/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/CapitalOne/Extent-Report/ExtentReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cigna/Extent-Report/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cigna/Extent-Report/ExtentReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cigna/src/main/java/cignaHomePage/CignaHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cigna/src/main/java/cignaHomePage/CignaHomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cigna/src/main/java/cignaHomePage/CignaHomePageWebElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cigna/src/main/java/cignaHomePage/CignaHomePageWebElement.java" afterDir="false" />
@@ -22,8 +36,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -47,7 +61,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/CapitalOne/Extent-Report" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CapitalOne/src/main/java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -55,11 +69,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\istih\IdeaProjects\WebAutomationFrameworkTDD_Team1\CapitalOne\src\main\java" />
       <recent name="C:\Users\istih\IdeaProjects\WebAutomationFrameworkTDD_Team1\CapitalOne\Extent-Report" />
       <recent name="C:\Users\istih\IdeaProjects\WebAutomationFrameworkTDD_Team1\Amazon\src\main\java" />
       <recent name="C:\Users\istih\IdeaProjects\WebAutomationFrameworkTDD_Team1\Amazon\src\test\resources" />
       <recent name="C:\Users\istih\IdeaProjects\WebAutomationFrameworkTDD_Team1\Cigna\src\test\resources" />
-      <recent name="C:\Users\istih\IdeaProjects\WebAutomationFrameworkTDD_Team1\Cigna\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="homepagetest" />
@@ -67,7 +81,24 @@
       <recent name="common" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/istih/IdeaProjects/WebAutomationFrameworkTDD_Team1/Cigna/src/test/resources/CignaTestRunner.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/istih/IdeaProjects/WebAutomationFrameworkTDD_Team1/CapitalOne/src/test/resources/CapitalOneTestRunner.xml">
+    <configuration name="CNNHomePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CNN" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cnnhomepagetest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cnnhomepagetest" />
+      <option name="MAIN_CLASS_NAME" value="cnnhomepagetest.CNNHomePageTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/Amazon/src/test/resources/AmazonTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/Amazon/src/test/resources/AmazonTestRunner.xml" />
@@ -88,6 +119,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/Users/istih/IdeaProjects/WebAutomationFrameworkTDD_Team1/CapitalOne/src/test/resources/CapitalOneTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CapitalOne" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/CapitalOne/src/test/resources/CapitalOneTestRunner.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/istih/IdeaProjects/WebAutomationFrameworkTDD_Team1/Cigna/src/test/resources/CignaTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Cigna" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/Cigna/src/test/resources/CignaTestRunner.xml" />
@@ -98,30 +139,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTest.testSearchBox" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Amazon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="homepagetest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="homepagetest" />
-      <option name="MAIN_CLASS_NAME" value="homepagetest.HomePageTest" />
-      <option name="METHOD_NAME" value="testSearchBox" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/istih/IdeaProjects/WebAutomationFrameworkTDD_Team1/Cigna/src/test/resources/CignaTestRunner.xml" />
+        <item itemvalue="TestNG.C:/Users/istih/IdeaProjects/WebAutomationFrameworkTDD_Team1/CapitalOne/src/test/resources/CapitalOneTestRunner.xml" />
         <item itemvalue="TestNG.C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/CNN/src/test/resources/CNNTestRunner.xml" />
+        <item itemvalue="TestNG.CNNHomePageTest" />
+        <item itemvalue="TestNG.C:/Users/istih/IdeaProjects/WebAutomationFrameworkTDD_Team1/Cigna/src/test/resources/CignaTestRunner.xml" />
         <item itemvalue="TestNG.C:/Users/Arthur/IdeaProjects/WebAutomationFrameworkTDD_Team1/Amazon/src/test/resources/AmazonTestRunner.xml" />
-        <item itemvalue="TestNG.HomePageTest.testSearchBox" />
       </list>
     </recent_temporary>
   </component>

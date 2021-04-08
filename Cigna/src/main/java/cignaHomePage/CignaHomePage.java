@@ -33,7 +33,7 @@ public class CignaHomePage extends WebAPI {
     public void checkMedicareSupplement() {
         getTextByXpath(individualsAndfamiliesLocator);
         mouseHoverByXpath(plandAndServicesLocator);
-        clickByLinkText("Medicare Supplement");
+        //clickByLinkText("Medicare Supplement");
 
     }
 
@@ -68,7 +68,7 @@ public class CignaHomePage extends WebAPI {
     public void checkPreExisting() {
         getTextByXpath(individualsAndfamiliesLocator);
         mouseHoverByXpath(understandingInsuranceLocator);
-        clickOnLink("What is a Pre-Existing Condition?");
+        clickByLinkText("What is a Pre-Existing Condition?");
 
     }
 
@@ -105,8 +105,9 @@ public class CignaHomePage extends WebAPI {
 
     public void checkVirtualCare() {
         checkIndividualsAndFamilies();
-        clickOnElement(memberServicesLocator);
-        clickByCss(virtualCareLocator);
+        clickByXpath(memberServicesLocator);
+        //clickByCss(virtualCareLocator);
+        clickOnLink("Virtual Care Options");
 
     }
 
@@ -126,7 +127,8 @@ public class CignaHomePage extends WebAPI {
     public void checkAdvancingDialogue() {
         checkIndividualsAndFamilies();
         clickOnLink("Health and Wellness");
-        getTextByXpath(advancingDialogueLocator);
+        //getTextByXpath(advancingDialogueLocator);
+        clickOnLink("Advancing the Race Dialogue");
 
     }
 
@@ -206,11 +208,27 @@ public class CignaHomePage extends WebAPI {
 
     }
 
-    public void checkCostControl(){
+    public void checkCostControl() {
         mouseHoverByCSS(employersAndBrokersLocator);
         getTextByCss(costControlLocator);
-
     }
+
+  public void checkHealthCareProvider(){
+        mouseHoverByXpath(healthCareProvidersLocator);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
