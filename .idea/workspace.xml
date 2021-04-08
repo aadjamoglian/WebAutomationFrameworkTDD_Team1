@@ -7,39 +7,35 @@
     <list default="true" id="7164e315-e4a8-47c7-bcc3-62f03911cb44" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Amazon/Extent-Report/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/Extent-Report/ExtentReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/homepage/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/main/java/homepage/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/homepage/HomePageWebElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/main/java/homepage/HomePageWebElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/homepagetest/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/java/homepagetest/HomePageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/src/test/resources/AmazonTestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/resources/AmazonTestRunner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Amazon/target/classes/homepage/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/homepage/HomePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Amazon/target/classes/homepage/HomePageWebElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/homepage/HomePageWebElement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/AmazonTestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/AmazonTestRunner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/homepagetest/HomePageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/homepagetest/HomePageTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CNN/Extent-Report/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/CNN/Extent-Report/ExtentReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN/src/main/java/cnnhomepage/CNNHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/CNN/src/main/java/cnnhomepage/CNNHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN/src/main/java/cnnhomepage/CNNHomePageWebElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/CNN/src/main/java/cnnhomepage/CNNHomePageWebElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNN/screenShots.png" beforeDir="false" afterPath="$PROJECT_DIR$/CNN/screenShots.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CNN/src/test/java/homepagetest/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CNN/src/test/java/homepagetest/HomePageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN/target/test-classes/CNNTestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CNN/target/test-classes/CNNTestRunner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapitalOne/Extent-Report/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/CapitalOne/Extent-Report/ExtentReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapitalOne/src/main/java/homepage/CapitalOneHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/CapitalOne/src/main/java/homepage/CapitalOneHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapitalOne/src/main/java/homepage/CapitalOneHomePageWebElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/CapitalOne/src/main/java/homepage/CapitalOneHomePageWebElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapitalOne/src/test/java/capitalonetest/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CapitalOne/src/test/java/capitalonetest/HomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNN/target/classes/arthur/CNNArthur.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNN/target/classes/cnnhomepage/CNNHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/CNN/target/classes/cnnhomepage/CNNHomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNN/target/test-classes/arthurtest/CNNArthurTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNN/target/test-classes/homepagetest/HomePageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/CNN/target/test-classes/homepagetest/HomePageTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CapitalOne/target/classes/homepage/CapitalOneHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/CapitalOne/target/classes/homepage/CapitalOneHomePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CapitalOne/target/classes/homepage/CapitalOneHomePageWebElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/CapitalOne/target/classes/homepage/CapitalOneHomePageWebElement.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CapitalOne/target/test-classes/capitalonetest/HomePageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/CapitalOne/target/test-classes/capitalonetest/HomePageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cigna/Extent-Report/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cigna/Extent-Report/ExtentReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cigna/src/main/java/cignaHomepage/CignaHomepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cigna/src/main/java/cignaHomepage/CignaHomepage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cigna/src/main/java/cignaHomepage/CignaHomepageWebElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cigna/src/main/java/cignaHomepage/CignaHomepageWebElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cigna/src/test/java/homepagetest/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cigna/src/test/java/homepagetest/HomePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cigna/target/classes/cignaHomepage/CignaHomepage.class" beforeDir="false" afterPath="$PROJECT_DIR$/Cigna/target/classes/cignaHomepage/CignaHomepage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cigna/target/classes/cignaHomepage/CignaHomepageWebElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/Cigna/target/classes/cignaHomepage/CignaHomepageWebElement.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cigna/target/test-classes/homepagetest/HomePageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Cigna/target/test-classes/homepagetest/HomePageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generic/src/main/java/common/WebAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/src/main/java/common/WebAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generic/src/main/java/utilities/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/src/main/java/utilities/DataReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generic/src/main/java/utilities/ReadExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/src/main/java/utilities/ReadExcel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generic/src/main/secret.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/src/main/secret.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Generic/target/classes/common/WebAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/classes/common/WebAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/target/classes/databases/ConnectToMongoDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/classes/databases/ConnectToMongoDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/target/classes/databases/ConnectToSqlDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/classes/databases/ConnectToSqlDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/target/classes/databases/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/classes/databases/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/target/classes/databases/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/classes/databases/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/target/classes/reporting/ApplicationLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/classes/reporting/ApplicationLog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/target/classes/reporting/ExtentManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/classes/reporting/ExtentManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/target/classes/reporting/ExtentTestManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/classes/reporting/ExtentTestManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/target/classes/reporting/TestLogger.class" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/classes/reporting/TestLogger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/target/classes/utilities/DataReader$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/classes/utilities/DataReader$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/target/classes/utilities/DataReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/classes/utilities/DataReader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Generic/target/classes/utilities/ReadExcel.class" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/classes/utilities/ReadExcel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/target/classes/utilities/WriteExcelFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/classes/utilities/WriteExcelFile.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +100,7 @@
       <recent name="common" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/farha/IdeaProjects/WebAutomationFrameworkTDD_Team1/CapitalOne/src/test/resources/CapitalOneTestRunner.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/farha/IdeaProjects/WebAutomationFrameworkTDD_Team1/CNN/src/test/resources/CNNTestRunner.xml">
     <configuration name="HomePageTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homepagetest.HomePageTest" />
       <module name="CNN" />
@@ -160,8 +156,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/farha/IdeaProjects/WebAutomationFrameworkTDD_Team1/CapitalOne/src/test/resources/CapitalOneTestRunner.xml" />
         <item itemvalue="TestNG.C:/Users/farha/IdeaProjects/WebAutomationFrameworkTDD_Team1/CNN/src/test/resources/CNNTestRunner.xml" />
+        <item itemvalue="TestNG.C:/Users/farha/IdeaProjects/WebAutomationFrameworkTDD_Team1/CapitalOne/src/test/resources/CapitalOneTestRunner.xml" />
         <item itemvalue="Application.HomePageTest" />
         <item itemvalue="TestNG.C:/Users/farha/IdeaProjects/WebAutomationFrameworkTDD_Team1/Cigna/src/test/resources/cignaTestRunner.xml" />
         <item itemvalue="TestNG.C:/Users/farha/IdeaProjects/WebAutomationFrameworkTDD_Team1/Amazon/src/test/resources/AmazonTestRunner.xml" />

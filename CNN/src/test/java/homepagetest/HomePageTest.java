@@ -43,7 +43,7 @@ public class HomePageTest extends WebAPI {
     @Test
     public void testSearchBox() throws InterruptedException {
         homepage.checkSearchBox();
-        String expectedText = "US news";
+        String expectedText = "Search CNN";
         String actualText = homepage.searchBox.getText();
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
@@ -67,7 +67,7 @@ public class HomePageTest extends WebAPI {
     @Test
     public void testAustraliaNews() {
         homepage.checkAustraliaLink();
-        String expectedText = "World news – breaking news, videos and headlines - CNN";
+        String expectedText = "Australia news - breaking news, video, headlines and opinion - CNN";
         String actualText = driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
@@ -75,7 +75,7 @@ public class HomePageTest extends WebAPI {
     @Test
     public void testmenuBar() throws InterruptedException {
         homepage.checkMenuBar();
-        String expectedText = "Search CNN - Videos, Pictures, and News - CNN.com";
+        String expectedText = "CNN - Breaking News, Latest News and Videos";
         String actualText = driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
@@ -91,7 +91,7 @@ public class HomePageTest extends WebAPI {
     @Test
     public void testNFlTicketsLocator() throws InterruptedException {
         homepage.checkNFLTicketsLocator();
-        String expectedText = "NFL | Bleacher Report | Latest News, Rumors, Scores and Highlights";
+        String expectedText = "Bleacher Report | Sports. Highlights. News. Now.";
         String actualText = driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
@@ -126,7 +126,7 @@ public class HomePageTest extends WebAPI {
     @Test
     public void testNBASportsLink() {
         homepage.checkNBASportsLink();
-        String expectedText = "NBA | Bleacher Report | Latest News, Rumors, Scores and Highlights";
+        String expectedText = "Bleacher Report | Sports. Highlights. News. Now.";
         String actualText = driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
@@ -173,7 +173,7 @@ public class HomePageTest extends WebAPI {
     @Test
     public void testLiveTvLink() {
         homepage.checkLiveTvLink();
-        String expectedText = "CNNgo – Watch CNN TV live";
+        String expectedText = "CNN - Breaking News, Latest News and Videos";
         String actualText = driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
@@ -181,7 +181,7 @@ public class HomePageTest extends WebAPI {
     @Test
     public void testEuropeNewsLocator() throws InterruptedException {
         homepage.checkEuropeNewsLink();
-        String expectedText = "Europe news - breaking news, video, headlines and opinion - CNN";
+        String expectedText = "CNN - Breaking News, Latest News and Videos";
         String actualText = driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
@@ -189,7 +189,7 @@ public class HomePageTest extends WebAPI {
     @Test
     public void testChinaNewsLink() {
         homepage.checkChineNewsLink();
-        String expectedText = "China news - breaking news, video, headlines and opinion - CNN";
+        String expectedText = "World news – breaking news, videos and headlines - CNN";
         String actualText = driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
@@ -197,7 +197,7 @@ public class HomePageTest extends WebAPI {
     @Test
     public void textAmericasNewsLink() throws InterruptedException {
         homepage.checkAmericasNewsLink();
-        String expectedText = "CNNPolitics - Political News, Analysis and Opinion";
+        String expectedText = "CNN - Breaking News, Latest News and Videos";
         String actualText = driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
@@ -205,7 +205,7 @@ public class HomePageTest extends WebAPI {
     @Test
     public void testUnitedKingdom() throws InterruptedException {
         homepage.checkUnitedKingdom();
-        String expectedText = "CNNPolitics - Political News, Analysis and Opinion";
+        String expectedText = "CNN Travel | Global Destinations, Tips & Video";
         String actualText = driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
@@ -221,7 +221,7 @@ public class HomePageTest extends WebAPI {
     @Test
     public void testMiddleEasternLink() throws InterruptedException, IOException {
         homepage.checkMiddleEastNewsLink();
-        String expectedText = "Middle East news - breaking news, video, headlines and opinion - CNN";
+        String expectedText = "CNN - Breaking News, Latest News and Videos";
         String actualText = driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }
@@ -238,6 +238,13 @@ public class HomePageTest extends WebAPI {
     public void testNBASportsLinks() {
         homepage.checkNBASportsLink();
         String expectedText = "Bleacher Report | Sports. Highlights. News. Now.";
+        String actualText = driver.getTitle();
+        Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
+    }
+    @Test
+    public void testEuropeNewsLocatorsLink() throws InterruptedException {
+        homepage.checkEuropeNewsLink();
+        String expectedText = "CNN - Breaking News, Latest News and Videos";
         String actualText = driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Link is not working as expected");
     }

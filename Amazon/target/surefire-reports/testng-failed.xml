@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [TestSuite]" verbose="0">
+  <parameter name="useCloudEnv" value="false"/>
+  <parameter name="OS" value="windows"/>
+  <parameter name="os_version" value="10"/>
+  <parameter name="cloudEnvName" value="browserStack"/>
+  <parameter name="url" value="https://www.amazon.com/"/>
+  <test thread-count="2" name="Amazon Automation Test Script Chrome(failed)" verbose="0">
+    <parameter name="browserVersion" value="89"/>
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="homepagetest.HomePageTest">
+        <methods>
+          <include name="testRefreshPage"/>
+          <include name="startExtent"/>
+          <include name="testFaceMakeupLink"/>
+          <include name="testDSLRCamera"/>
+          <include name="testKindleBooksUnder$2Deal"/>
+          <include name="testFragranceLink"/>
+          <include name="testKindleExclusiveDeals"/>
+          <include name="testAppliancesLink"/>
+          <include name="testBestSellers"/>
+          <include name="testAutomotiveLink"/>
+          <include name="testKindleBooks"/>
+          <include name="textMakeupSetsLink"/>
+          <include name="testDSLRCameras"/>
+          <include name="testKindleBooksUnder$2Deals"/>
+          <include name="testDigitalMegazines"/>
+          <include name="generateReport"/>
+          <include name="textSkinCareLink"/>
+          <include name="afterEachTestMethod"/>
+          <include name="testKindleDailyDeals"/>
+          <include name="testLanguages"/>
+          <include name="textSkinCareLink1"/>
+          <include name="testYourGarageLink"/>
+          <include name="testExcelRead"/>
+          <include name="setUp"/>
+          <include name="testCameraAndPhoto"/>
+          <include name="testSearchBox"/>
+          <include name="getInit"/>
+          <include name="cleanUp"/>
+          <include name="testAutomotiveLinks"/>
+          <include name="testKindleMonthlyDeals"/>
+          <include name="testBeautyAndPersonalCare"/>
+          <include name="extentSetup"/>
+          <include name="testMakeupLink"/>
+          <include name="testGiftSetLink"/>
+          <include name="testAutomotivePartsLink"/>
+          <include name="testRadioButton"/>
+          <include name="testKindleEBooks"/>
+          <include name="testSearchBox1"/>
+        </methods>
+      </class> <!-- homepagetest.HomePageTest -->
+    </classes>
+  </test> <!-- Amazon Automation Test Script Chrome(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
