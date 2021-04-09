@@ -75,7 +75,7 @@
       <recent name="homepagetest" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/Amazon/src/test/resources/AmazonTestRunner.xml">
+  <component name="RunManager" selected="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/ATT/src/test/resources/ATTTestRunner.xml">
     <configuration type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Cigna" />
       <useClassPathOnly />
@@ -119,17 +119,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SupportPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/ATT/src/test/resources/ATTTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ATT" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="supportpagetest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="supportpagetest" />
-      <option name="MAIN_CLASS_NAME" value="supportpagetest.SupportPageTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/ATT/src/test/resources/ATTTestRunner.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -137,9 +130,17 @@
       </method>
     </configuration>
     <configuration name="/Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/Amazon/src/test/resources/AmazonTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Amazon" />
+      <module name="ATT" />
+      <useClassPathOnly />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/Amazon/src/test/resources/AmazonTestRunner.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -232,15 +233,15 @@
     </configuration>
     <list>
       <item itemvalue="Cucumber Java.Scenario: check functionality of login account" />
-      <item itemvalue="TestNG.SupportPageTest" />
       <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/Cigna/src/test/resources/CignaTestRunner.xml" />
       <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/Amazon/src/test/resources/AmazonTestRunner.xml" />
+      <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/ATT/src/test/resources/ATTTestRunner.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/ATT/src/test/resources/ATTTestRunner.xml" />
         <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/Amazon/src/test/resources/AmazonTestRunner.xml" />
         <item itemvalue="Cucumber Java.Scenario: check functionality of login account" />
-        <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/Cigna/src/test/resources/CignaTestRunner.xml" />
         <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/Cigna/src/test/resources/CignaTestRunner.xml" />
         <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/Cigna/src/test/resources/CignaTestRunner.xml" />
       </list>
