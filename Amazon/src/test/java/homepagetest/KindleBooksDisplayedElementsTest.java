@@ -15,62 +15,62 @@ public class KindleBooksDisplayedElementsTest extends WebAPI {
     public void getInit() {
         kindleBooksDisplayedElements = PageFactory.initElements(driver, KindleBooksDisplayedElements.class);
     }
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void kindleBooksDisplayedTest(){
         kindleBooksDisplayedElements.kindleBooksDisplayed();
         boolean display = kindleBooksDisplayedElements.kindleBooksDisplayed();
         Assert.assertEquals(display,true);
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void buyAKindlesDisplayedTest(){
         boolean display = kindleBooksDisplayedElements.buyAKindlesDisplayed();
         Assert.assertEquals(display,true);
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void kindleEbooksDisplayedTest(){
         boolean display = kindleBooksDisplayedElements.kindleEbooksDisplayed();
         Assert.assertEquals(display,true);
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void kindleUnlimitedDisplayedTest(){
         boolean display = kindleBooksDisplayedElements.kindleUnlimitedDisplayed();
         Assert.assertEquals(display,true);
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void primeReadingDisplayedTest(){
         boolean display = kindleBooksDisplayedElements.primeReadingDisplayed();
         Assert.assertEquals(display,true);
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void kindleBookDealsDisplayedTest(){
         boolean display = kindleBooksDisplayedElements.kindleBookDealsDisplayed();
         Assert.assertEquals(display,true);
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void kindleSinglesDisplayedTest(){
         boolean display = kindleBooksDisplayedElements.kindleSinglesDisplayed();
         Assert.assertEquals(display,true);
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void newsStandDisplayedTest(){
         boolean display = kindleBooksDisplayedElements.newsStandDisplayed();
         Assert.assertEquals(display,true);
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void manageContentAndDevicesDisplayedTest(){
         boolean display = kindleBooksDisplayedElements.manageContentAndDevicesDisplayed();
         Assert.assertEquals(display,true);
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void advancedSearchDisplayedTest(){
         boolean display = kindleBooksDisplayedElements.advancedSearchDisplayed();
         Assert.assertEquals(display,true);

@@ -18,7 +18,7 @@ public class LogInToMyCignaPageTest extends WebAPI {
 //        registration = PageFactory.initElements(driver, Registration.class);
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void logInMyCignaDisplayedTest() {
         logInToMyCignaPage.logInMyCignaDisplayed();
         boolean logInMyCignaDisplay = logInToMyCignaPage.logInMyCigna.isDisplayed();
@@ -33,7 +33,7 @@ public class LogInToMyCignaPageTest extends WebAPI {
 //    Assert.assertEquals(expectedText,actualText,"true");
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void customerLogInDisplayedTEST() {
         logInToMyCignaPage.customerLogInDisplayed();
         boolean customerLogInDisplay = logInToMyCignaPage.customerLogIn.isDisplayed();

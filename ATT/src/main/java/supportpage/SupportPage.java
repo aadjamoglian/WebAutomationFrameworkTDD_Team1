@@ -50,7 +50,13 @@ public class SupportPage extends WebAPI {
     @FindBy(xpath = at_tInternetLocator) public WebElement at_tInternet;
     @FindBy(xpath = at_tInternetSupportLocator) public WebElement at_tInternetSupport;
 
-
+    public void viewMyBillSignIn() {
+        support.click();
+        viewMyBill.click();
+        userId.sendKeys("cheriiijuxbxg");
+        password.sendKeys("fsggsxzbz ");
+        signInButton.click();
+    }
     public boolean supportDisplay() {
         return support.isDisplayed();
     }
@@ -67,14 +73,6 @@ public class SupportPage extends WebAPI {
     public void viewMyBill() {
         support.click();
         viewMyBill.click();
-    }
-
-    public void viewMyBillSignIn() {
-        support.click();
-        viewMyBill.click();
-        userId.sendKeys("cheriiijuxbxg");
-        password.sendKeys("fsggsxzbz ");
-        signInButton.click();
     }
 
     public boolean don_tHaveIdTextDisplay() {

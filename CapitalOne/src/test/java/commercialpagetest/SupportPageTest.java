@@ -17,27 +17,27 @@ public class SupportPageTest extends WebAPI {
     }
 
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void supportDisplayedTest(){
       helpPage.supportDisplayed();
       boolean supportDisplay=helpPage.support.isDisplayed();
         Assert.assertEquals(supportDisplay,true);
     }
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void supportTest(){
         helpPage.support();
         String expectedTitle="Capital One Support Center";
         String actualTitle=driver.getTitle();
         Assert.assertEquals(expectedTitle,actualTitle,"test fail");
     }
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void searchSupportCenterTest(){
         helpPage.searchSupportCenter();
         String expectedText="Search Results";
         String actualText=helpPage.text.getText();
         Assert.assertEquals(expectedText,actualText,"test fail");
     }
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void creditCardProductsTest(){
         helpPage.creditCardProducts();
         String expectedUrl="https://www.capitalone.com/support-center/search?query=credit%20card";

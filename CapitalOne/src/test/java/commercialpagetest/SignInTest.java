@@ -15,26 +15,26 @@ public class SignInTest extends WebAPI {
         signInPage=PageFactory.initElements(driver,SignInPage.class);
     }
 
-@Test(enabled = false)
+@Test(enabled = true)
    public void signInTest(){
         signInPage.checkSignIn();
         String expectedText="Oops!";
         String actualText=signInPage.oopsText.getText();
        Assert.assertEquals(expectedText,actualText,"test fail" );
    }
-   @Test(enabled = false)
+   @Test(enabled = true)
 public void userNameDisplayedTest(){
     signInPage.signInButtonDisplayed();
     boolean userNameDisplayed=signInPage.userName.isDisplayed();
     Assert.assertEquals(userNameDisplayed,true);
 }
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void signInButtonDisplayedTest(){
         signInPage.signInButtonDisplayed();
         boolean signInButtonDisplayed=signInPage.signInButton.isDisplayed();
         Assert.assertEquals(signInButtonDisplayed,true);
     }
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void passwordDisplayedTest(){
         signInPage.passwordDisplayed();
         boolean passwordDisplayed=signInPage.password.isDisplayed();

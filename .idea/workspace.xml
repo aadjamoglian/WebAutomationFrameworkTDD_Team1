@@ -49,7 +49,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Cigna/src/test/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -75,7 +75,7 @@
       <recent name="homepagetest" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: check functionality of login account">
+  <component name="RunManager" selected="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/Amazon/src/test/resources/AmazonTestRunner.xml">
     <configuration type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Cigna" />
       <useClassPathOnly />
@@ -104,7 +104,7 @@
       <option name="CUCUMBER_CORE_VERSION" value="1" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/Delta/src/test/java/features/HomePage.feature" />
       <option name="MAIN_CLASS_NAME" value="cucumber.cli.Main" />
-      <module name="Delta" />
+      <module name="WebAutomationFrameworkTDD_Team1" />
       <option name="NAME_FILTER" value="^check functionality of login account$" />
       <option name="PROGRAM_PARAMETERS" value=" --format org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^check functionality of login account$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: check functionality of login account" />
@@ -136,51 +136,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/ATT/src/test/resources/ATTTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ATT" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="supportpagetest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/ATT/src/test/resources/ATTTestRunner.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="/Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/CNN/src/test/resources/CNNTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="CNN" />
-      <useClassPathOnly />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/CNN/src/test/resources/CNNTestRunner.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/Cigna/src/test/resources" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="/Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/CapitalOne/src/test/resources/CapitalOneTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="CapitalOne" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/CapitalOne/src/test/resources/CapitalOneTestRunner.xml" />
+    <configuration name="/Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/Amazon/src/test/resources/AmazonTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Amazon" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/Amazon/src/test/resources/AmazonTestRunner.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -274,14 +232,13 @@
     </configuration>
     <list>
       <item itemvalue="Cucumber Java.Scenario: check functionality of login account" />
-      <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/CNN/src/test/resources/CNNTestRunner.xml" />
-      <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/CapitalOne/src/test/resources/CapitalOneTestRunner.xml" />
-      <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/ATT/src/test/resources/ATTTestRunner.xml" />
       <item itemvalue="TestNG.SupportPageTest" />
       <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/Cigna/src/test/resources/CignaTestRunner.xml" />
+      <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/Amazon/src/test/resources/AmazonTestRunner.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/Amazon/src/test/resources/AmazonTestRunner.xml" />
         <item itemvalue="Cucumber Java.Scenario: check functionality of login account" />
         <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/Cigna/src/test/resources/CignaTestRunner.xml" />
         <item itemvalue="TestNG./Users/ameurcherif/Desktop/WebAutomationFrameworkTDD_Team1/Cigna/src/test/resources/CignaTestRunner.xml" />

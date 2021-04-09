@@ -47,6 +47,13 @@ public class KindleBooksPage extends WebAPI {
     @FindBy(xpath = popularInKindleLocator)
     public WebElement popularInKindle;
 
+
+    public void kindleBooksSearchBox() {
+        kindleBooks.click();
+        Select select = new Select(kindleBooksSearchBox);
+        select.selectByIndex(2);
+        searchButton.click();
+    }
     public void kindleBooksTitle() {
 
         kindleBooks.click();
@@ -108,13 +115,7 @@ public class KindleBooksPage extends WebAPI {
         advancedSearch.click();
     }
 
-    public void kindleBooksSearchBox() {
-        kindleBooks.click();
-        Select select = new Select(kindleBooksSearchBox);
-        select.selectByIndex(2);
-        searchButton.click();
 
-    }
 
     public void kindleBooksSearchBox1() {
         kindleBooks.click();
