@@ -4,7 +4,15 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.ss.util.NumberToTextConverter;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.*;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -17,23 +25,18 @@ import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import org.testng.annotations.Optional;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.StringWriter;
+import java.io.*;
 import java.lang.reflect.Method;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class WebAPI {
@@ -118,17 +121,16 @@ public class WebAPI {
     }
 
     // Browser Setup
-    public static WebDriver driver=null;
+    public static WebDriver driver = null;
     public static String browserStack_userName = "Happy";
     public static String browserStack_accessKey = "kqCbxkGyFsYtkCiycjEx";
     public static String sauceLabs_userName = "";
     public static String sauceLabs_accessKey = "";
 
 
-
-    @Parameters({"useCloudEnv","cloudEnvName","OS","os_version","browserName","browserVersion","url"})
+    @Parameters({"useCloudEnv", "cloudEnvName", "OS", "os_version", "browserName", "browserVersion", "url"})
     @BeforeMethod
-    public void setUp(@Optional("false") boolean useCloudEnv, @Optional("sauceLabs") String cloudEnvName, @Optional("windows") String OS, @Optional("10") String os_version, @Optional("chrome") String browserName, @Optional("89") String browserVersion,@Optional("http://www.google.com") String url) throws IOException {
+    public void setUp(@Optional("false") boolean useCloudEnv, @Optional("sauceLabs") String cloudEnvName, @Optional("windows") String OS, @Optional("10") String os_version, @Optional("chrome") String browserName, @Optional("89") String browserVersion, @Optional("http://www.google.com") String url) throws IOException {
         // Platform: Local Machine/ Cloud Machine
         // Platform: Local Machine/ Cloud Machine
         if (useCloudEnv == true) {
@@ -147,35 +149,35 @@ public class WebAPI {
         driver.manage().window().maximize();
     }
 
-    public WebDriver getLocalDriver(String OS, String browserName){
-        if (browserName.equalsIgnoreCase("chrome")){
-            if (OS.equalsIgnoreCase("OS X")){
-                System.setProperty("webdriver.chrome.driver","../Generic/BrowserDriver/mac/chromedriver");
-            } else if (OS.equalsIgnoreCase("windows")){
-                System.setProperty("webdriver.chrome.driver","../Generic/BrowserDriver/windows/chromedriver.exe");
+    public WebDriver getLocalDriver(String OS, String browserName) {
+        if (browserName.equalsIgnoreCase("chrome")) {
+            if (OS.equalsIgnoreCase("OS X")) {
+                System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/mac/chromedriver");
+            } else if (OS.equalsIgnoreCase("windows")) {
+                System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/windows/chromedriver.exe");
             }
-            driver=new ChromeDriver();
-        } else if (browserName.equalsIgnoreCase("chrome-options")){
+            driver = new ChromeDriver();
+        } else if (browserName.equalsIgnoreCase("chrome-options")) {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--disable-notifications");
-            if (OS.equalsIgnoreCase("OS X")){
-                System.setProperty("webdriver.chrome.driver","../Generic/BrowserDriver/mac/chromedriver");
-            } else if (OS.equalsIgnoreCase("windows")){
-                System.setProperty("webdriver.chrome.driver","../Generic/BrowserDriver/windows/chromedriver.exe");
+            if (OS.equalsIgnoreCase("OS X")) {
+                System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/mac/chromedriver");
+            } else if (OS.equalsIgnoreCase("windows")) {
+                System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/windows/chromedriver.exe");
             }
-            driver=new ChromeDriver(options);
-        } else if (browserName.equalsIgnoreCase("firefox")){
-            if (OS.equalsIgnoreCase("OS X")){
-                System.setProperty("webdriver.gecko.driver","../Generic/BrowserDriver/mac/geckodriver");
-            } else if (OS.equalsIgnoreCase("windows")){
-                System.setProperty("webdriver.gecko.driver","../Generic/BrowserDriver/windows/geckodriver.exe");
+            driver = new ChromeDriver(options);
+        } else if (browserName.equalsIgnoreCase("firefox")) {
+            if (OS.equalsIgnoreCase("OS X")) {
+                System.setProperty("webdriver.gecko.driver", "../Generic/BrowserDriver/mac/geckodriver");
+            } else if (OS.equalsIgnoreCase("windows")) {
+                System.setProperty("webdriver.gecko.driver", "../Generic/BrowserDriver/windows/geckodriver.exe");
             }
-            driver=new FirefoxDriver();
-        } else if (browserName.equalsIgnoreCase("ie")){
-            if (OS.equalsIgnoreCase("windows")){
-                System.setProperty("webdriver.ie.driver","../Generic/BrowserDriver/windows/IEDriverServer.exe");
+            driver = new FirefoxDriver();
+        } else if (browserName.equalsIgnoreCase("ie")) {
+            if (OS.equalsIgnoreCase("windows")) {
+                System.setProperty("webdriver.ie.driver", "../Generic/BrowserDriver/windows/IEDriverServer.exe");
             }
-            driver=new InternetExplorerDriver();
+            driver = new InternetExplorerDriver();
         }
 
         return driver;
@@ -203,9 +205,8 @@ public class WebAPI {
     }
 
 
-
     @AfterMethod(alwaysRun = true)
-    public void cleanUp(){
+    public void cleanUp() {
         //driver.close();
         driver.quit();
     }
@@ -382,7 +383,7 @@ public class WebAPI {
         return list;
     }
 
-    public List<WebElement> getListOfWebElementsByXpath(String locator) {
+    public static List<WebElement> getListOfWebElementsByXpath(String locator) {
         List<WebElement> list = new ArrayList<WebElement>();
         list = driver.findElements(By.xpath(locator));
         return list;
@@ -757,10 +758,123 @@ public class WebAPI {
         String url = driver.getCurrentUrl();
         return url;
     }
+    //public static final String FILE_NAME= "../WebAutomationFrameworkTDD_Team1/TestData/testdata.xlsx";
+
+    public static String readExcel1(int row, int cell) {
+        File FILE_NAME = new File("../WebAutomationFrameworkTDD_Team1/TestData/testdata.xlsx");
+        String results = null;
+
+        try {
+            FileInputStream inputStream = new FileInputStream(FILE_NAME);
+            Workbook workbook = new XSSFWorkbook(inputStream);
+
+            XSSFSheet sheet = (XSSFSheet) workbook.getSheetAt(0);
+            // Sheet dataTypeSheet = workbook.getSheetAt(sheet1);
+
+            XSSFRow sheetRow = (XSSFRow) sheet.getRow(row);
+
+            sheet.getRow(row).getCell(cell);
+            System.out.println(sheet.getRow(row).getCell(cell));
+
+//            Iterator<Row> rowIterator = sheet.iterator();
+//            while (rowIterator.hasNext()){
+//                Row currentRow = rowIterator.next();
+//                Iterator<Cell> cellIterator = currentRow.iterator();
+//                while (cellIterator.hasNext()){
+//                    Cell currentCell = cellIterator.next();
+//                    if (currentCell.getCellType() == CellType.STRING){
+//                        System.out.print(currentCell.getStringCellValue()+"   ");
+//                    } else if (currentCell.getCellType() == CellType.NUMERIC){
+//                        System.out.print(currentCell.getNumericCellValue()+"   ");
+//                    }  else if (currentCell.getCellType() == CellType.BOOLEAN){
+//                        System.out.print(currentCell.getBooleanCellValue()+"   ");
+//                    }
+//                }
+            //              System.out.println();
+            //         }
+        } catch (FileNotFoundException fn) {
+            System.out.println("File not Found");
+        } catch (IOException io) {
+            System.out.println("Reading Done");
+        }
+        return results;
+    }
+
+    public static String readExcel2(String fileName, int Sheetnumber, int row, int cell) {
+        String results1 = null;
+
+        try {
+            FileInputStream inputStream = new FileInputStream(fileName);
+            Workbook workbook = new XSSFWorkbook(inputStream);
+            XSSFSheet sheet = (XSSFSheet) workbook.getSheetAt(Sheetnumber);
+            XSSFRow sheetRow = (XSSFRow) sheet.getRow(row);
+            //sheet.getRow(row).getCell(cell);
+            XSSFCell cellValue = sheetRow.getCell(cell);
+            // System.out.println(sheet.getRow(row).getCell(cell));
+            //Create a cell object to retreive cell at index 5
+            //Get the address in a variable
+            // String name = cell.getStringCellValue();
+
+        } catch (FileNotFoundException fn) {
+            System.out.println("File not Found");
+        } catch (IOException io) {
+            System.out.println("Reading Done");
+        }
+        return results1;
+    }
+
+    public static ArrayList<String> getDataFromexcel(String testcaseName) throws IOException {
+        //fileInputStream argument
+      //  File FILE_NAME = new File("../WebAutomationFrameworkTDD_Team1/Amazon/DataTest/testdata.xlsx");
+            ArrayList<String> arrayList = new ArrayList<String>();
+            //FileInputStream inputStream = new FileInputStream(FILE_NAME);
+        FileInputStream inputStream = new FileInputStream("../WebAutomationFrameworkTDD_Team1/DataTest/testdata.xlsx");
+            XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
+
+            int sheets = workbook.getNumberOfSheets();
+            for (int i = 0; i < sheets; i++) {
+                if (workbook.getSheetName(i).equalsIgnoreCase("logindata")) {
+                    XSSFSheet sheet = workbook.getSheetAt(i);
+//Identify Testcases coloum by scanning the entire 1st row
+
+                    Iterator<Row> rows = sheet.iterator();// sheet is collection of rows
+                    Row firstrow = rows.next();
+                    Iterator<Cell> ce = firstrow.cellIterator();//row is collection of cells
+                    int k = 0;
+                    int coloumn = 0;
+                    while (ce.hasNext()) {
+                        Cell value = ce.next();
+                        if (value.getStringCellValue().equalsIgnoreCase("TestCase")) ;
+                        coloumn = k;
+                    }
+                    k++;
+                    System.out.println(coloumn);
+                    ////once coloumn is identified then scan entire testcase coloum to identify purcjhase testcase row
+                    while (rows.hasNext()) {
+                        Row r = rows.next();
+                        if (r.getCell(coloumn).getStringCellValue().equalsIgnoreCase(testcaseName)) {
+                            ////after you grab purchase testcase row = pull all the data of that row and feed into test
+                            Iterator<Cell> cv = r.cellIterator();
+                            while (cv.hasNext()) {
+                                Cell c = cv.next();
+                                if (c.getCellType() == CellType.STRING) {//getCellTypeEnum()
+
+                                    arrayList.add(c.getStringCellValue());
+                                } else {
+                                    arrayList.add(NumberToTextConverter.toText(c.getNumericCellValue()));
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+            }
+            return arrayList;
+            }
+
+        }
 
 
 
 
-
-
-}

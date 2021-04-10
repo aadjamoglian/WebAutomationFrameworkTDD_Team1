@@ -7,19 +7,16 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
+import java.io.IOException;
+import java.sql.SQLException;
 
 public class CapitalOneTestPage extends WebAPI {
     CapitalOnepage capitalOnepage;
 
     @BeforeMethod
     public void getInit() {
-
         capitalOnepage = PageFactory.initElements(driver, CapitalOnepage.class);
-
-
     }
-
     @Test(enabled = false)
     public void testAutoLoanMouseHoover() throws InterruptedException {
         //call the method here
@@ -27,28 +24,24 @@ public class CapitalOneTestPage extends WebAPI {
         String expectedText = "Get Pre-qualified";
         String actualText = capitalOnepage.FindTheRightCarText.getText();
         Assert.assertEquals(actualText, expectedText, "product does not match");
-
     }
-
     @Test(enabled = true)
-    public void testCapSingIn() throws InterruptedException {
+    public void testCapSingIn() throws InterruptedException, SQLException, ClassNotFoundException, IOException {
         //testAutoLoanMouseHoover();
         capitalOnepage.CapSingIn();
         String expectedText = "Sign In";
         String actualText = capitalOnepage.signIngetText.getText();
         Assert.assertEquals(actualText, expectedText, "product does not match");
     }
-
     @Test(enabled = false)
     public void testCreditCardMouseHoover() throws InterruptedException {
         capitalOnepage.CreditCardMouseHoover();
         String expectedText = "TYPES OF CREDIT CARDS";
         String actualText = capitalOnepage.TypeOfcreditCardText.getText();
         Assert.assertEquals(actualText, expectedText, "product does not match");
-
     }
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void testTravelRewardCardCase() throws InterruptedException {
         //testCreditCardMouseHoover();
         capitalOnepage.TravelRewardCardCase();
@@ -56,7 +49,6 @@ public class CapitalOneTestPage extends WebAPI {
         String actualText = capitalOnepage.TravelAndMilesRewardText.getText();
         Assert.assertEquals(actualText, expectedText, "product does not match");
     }
-
     @Test(enabled =false)
     public void testVentureRewardsCard() throws InterruptedException {
         //testTravelRewardCardCase();
@@ -65,7 +57,6 @@ public class CapitalOneTestPage extends WebAPI {
         String actualText = capitalOnepage.EarnBonustext.getText();
         Assert.assertEquals(actualText, expectedText, "product does not match");
     }
-
     @Test(enabled =false)
     public void YourCreditScoreWorthProtecting() throws InterruptedException {
         capitalOnepage.YourCreditScoreWorthProtecting();

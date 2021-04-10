@@ -8,6 +8,9 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+import java.sql.SQLException;
+
 public class CignaTestDriver extends WebAPI {
     CignaPage cignaPage;
 
@@ -68,7 +71,6 @@ public class CignaTestDriver extends WebAPI {
 
     }
 
-
     @Test(enabled = false)
     public void testcategoryclaimAndPaymentpharmacy() throws InterruptedException {
         testexploreGlocery();
@@ -77,24 +79,83 @@ public class CignaTestDriver extends WebAPI {
         String actualText = cignaPage.SearchTermBByText.getText();
         Assert.assertEquals(actualText, expectedText, "product does not match");
     }
-
-    @Test(enabled = false)
-    public void testCutomerLoginCigna() throws InterruptedException {
+//database connection
+    @Test(enabled = true)
+    public void testCutomerLoginCigna() throws InterruptedException, SQLException, IOException, ClassNotFoundException {
         cignaPage.CutomerLoginCigna();
-        String expectedText = "Something Went Wrong";
-        String actualText = cignaPage.somethingWentWrongMessage.getText();
+        String expectedText = "Customer Login";
+        String actualText = cignaPage.gettingcustomerLoginText.getText();
         Assert.assertEquals(actualText, expectedText, "product does not match");
 
     }
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void testRegisterCigna() throws InterruptedException {
         cignaPage.RegisterCigna();
         String expectedText = "Activate your myCigna account";
-        String actualText = cignaPage.ActiveMyCignaAccount.getText();
+        String actualText = cignaPage.ActiveMyCignaAccounttext.getText();
+        Assert.assertEquals(actualText, expectedText, "product does not match");
+
+    }
+
+    @Test(enabled = false)
+    public void testHealthInsuranceforIndividualesandFamilies() throws InterruptedException {
+
+       cignaPage.HealthInsuranceforIndividualesandFamilies();
+        String expectedText = "Health Plans by State";
+        String actualText = cignaPage.HealthPlaneByStatetext.getText();
         Assert.assertEquals(actualText, expectedText, "product does not match");
 
 
     }
-}
+    @Test(enabled = false)
+    public void testSelectStateDropDownBox() throws InterruptedException {
+
+        cignaPage.SelectStateDropDownBox();
+        String expectedText ="Select a State";
+        String actualText = cignaPage.selectStategettext.getText();
+        Assert.assertEquals(actualText, expectedText, "product does not match");
+
+    }
+    @Test(enabled = false)
+    public void testSelectcountryDropDownBox() throws InterruptedException{
+       cignaPage.SelectcountryDropDownBox();
+        String expectedText ="Health Insurance Plans in Maricopa, Arizona";
+        String actualText = cignaPage.HealthInsurancePlaneInMaricopatext.getText();
+        Assert.assertEquals(actualText, expectedText, "product does not match");
+    }
+
+    @Test(enabled = false)
+    public void testMarketPlacePlanelevelAndFeatures() throws InterruptedException {
+
+        cignaPage.MarketPlacePlanelevelAndFeatures();
+        String expectedText ="Our most popular plans come in three categories: Bronze, Silver, and Gold, also called “metal levels.”";
+        String actualText = cignaPage.MarketPlacePlaneLevelclickthengetTextPage.getText();
+        Assert.assertEquals(actualText, expectedText, "product does not match");
+    }
+
+    @Test(enabled = false)
+    public void testFindDoctorDentistFacility() throws InterruptedException {
+
+        cignaPage.FindDoctorDentistFacility();
+
+        String expectedText ="Employer or School";
+        String actualText = cignaPage.EmployeSchooltextfromImage.getText();
+        Assert.assertEquals(actualText, expectedText, "product does not match");
+    }
+
+
+    //cigna International
+    @Test(enabled = false)
+    public void testCignaInterNational() throws InterruptedException {
+        cignaPage.CignaInterNational();
+        String expectedText ="Truly global health solutions.";
+        String actualText = cignaPage.TruelyGlobalHealthSolitionText.getText();
+        Assert.assertEquals(actualText, expectedText, "product does not match");
+
+    }
+
+
+
+    }
 

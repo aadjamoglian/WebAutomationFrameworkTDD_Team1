@@ -56,7 +56,7 @@ public class ConnectToSqlDB {
         return data;
     }
 
-    private void close() {
+    private static void close() {
         try{
             if(resultSet != null){
                 resultSet.close();
@@ -72,11 +72,43 @@ public class ConnectToSqlDB {
         }
     }
 
+
+
+    public static List<String> readDataBase(String tableName, String columnName1, String columnName2) throws Exception {
+        List<String> data = new ArrayList<String>();
+        try {
+            connectToSqlDatabase();// it will connect with Database
+            statement = connect.createStatement();
+            resultSet = statement.executeQuery("select * from " + tableName);
+            data = getResultSetData(resultSet, columnName1, columnName2);
+            //System.out.println(data);
+            for (String dt : data) {
+                System.out.print(dt + " ");
+            }
+        } catch (ClassNotFoundException e) {
+            throw e;
+        } finally {
+             close();
+        }
+        return data;
+    }
+
     private List<String> getResultSetData(ResultSet resultSet2, String columnName) throws SQLException {
         List<String> dataList = new ArrayList<String>();
         while(resultSet.next()){
             String itemName = resultSet.getString(columnName);
             dataList.add(itemName);
+        }
+        return dataList;
+    }
+
+    private static List<String> getResultSetData(ResultSet resultSet, String columnName1, String columnName2) throws SQLException {
+        List<String> dataList = new ArrayList<String>();
+        while (resultSet.next()) {
+            String itemName1 = resultSet.getString(columnName1);
+            String itemName2 = resultSet.getString(columnName2);
+            dataList.add(itemName1);
+            dataList.add(itemName2);
         }
         return dataList;
     }
@@ -222,6 +254,37 @@ public class ConnectToSqlDB {
                 //System.out.format("%s, %s\n", name, id);
                 user = new User(name,id, dob);
                 list.add(user);
+
+            }
+            st.close();
+        }catch (Exception e){
+            System.err.println("Got an exception! ");
+            System.err.println(e.getMessage());
+        }
+        return list;
+    }
+
+    public static ArrayList<String> readUserProfileFromSqlTable1()throws IOException, SQLException, ClassNotFoundException {
+       // List<User> list = new ArrayList<>();
+        ArrayList<String> list = new ArrayList<>();
+       // User user = null;
+        try{
+            Connection conn = connectToSqlDatabase();
+            String query = "SELECT * FROM chase_emp where emp_id = 102";
+           // SELECT * FROM emloyee_db.chase_emp where emp_id= 102;
+            // create the java statement
+            Statement st = conn.createStatement();
+            // execute the query, and get a java resultset
+            ResultSet rs = st.executeQuery(query);
+            // iterate through the java resultset
+            while (rs.next())
+            {
+                String name = rs.getString("emp_Firstname");
+                String id = rs.getString("emp_Lastname");
+                String dob = rs.getString("emp_password");
+                //System.out.format("%s, %s\n", name, id);
+               // user = new User(name,id, dob);
+               // list.add(user);
 
             }
             st.close();

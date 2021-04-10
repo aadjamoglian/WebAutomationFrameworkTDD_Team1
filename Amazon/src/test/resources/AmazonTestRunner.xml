@@ -9,6 +9,7 @@
     <parameter name="OS" value="windows"/>
     <parameter name="os_version" value="10"/>
     <parameter name="url" value="https://www.amazon.com/"/>
+    <parameter name ="FILE_NAME" value="../WebAutomationFrameworkTDD_Team1/Amazon/TestData/testdata.xlsx"/>
 
 
 

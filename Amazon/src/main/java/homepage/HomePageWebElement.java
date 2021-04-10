@@ -24,7 +24,6 @@ public class HomePageWebElement  {
     public static final String SelectImage ="//*[@id=\"live-flagship-root\"]/div/div[2]/div[2]/div/div/div[11]/div/div[1]/div";
     public static final String SwetyRockWomanShort="a-size-large product-title-word-break";
 
-
     public static final String Fashion1="//*[@id=\"nav-xshop\"]/a[7]";
     public static final String Women="//*[@id=\"sobe_d_b_4_1\"]/a";
     public static final String ShopByCategory=" /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[14]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h3[2]" ;
@@ -58,4 +57,18 @@ public class HomePageWebElement  {
     public static final String addToCart = "//input[@id='add-to-cart-button']";
     public static final String selectCart= "//*[@id=\"nav-cart\"]";
     public static final String shoppingCart ="//*[@id=\"sc-active-cart\"]/div/div/div";
+
+    //radio Button For Usa Flag icon
+    public static final String UsaFlage ="//span[@class='nav-line-2']//span[@class='nav-icon nav-arrow null']";
+    public static final String Amazoncom ="//*[@id=\"nav-flyout-icp\"]/div[2]/span[2]/span";
+
+    //Nav and Order
+    public static final String ReturnAndOrder ="nav-orders";
+    public static final String NewToAmazon ="//*[@id=\"authportal-main-section\"]/div[2]/div/div[2]";
+    public static final String ClickAllButton ="//*[@id=\"nav-search-label-id\"]";
+    public static final String listofElementsinAl="//*[@id=\"searchDropdownBox\"]/option";
+
+
+
+
 }
